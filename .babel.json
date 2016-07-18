@@ -1,0 +1,2138 @@
+{
+  "{\"filename\":\"/home/bob/mm/bin/server.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false}:6.10.4": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "../config",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "config"
+              }
+            ]
+          },
+          {
+            "source": "../server/main",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "server"
+              }
+            ]
+          },
+          {
+            "source": "debug",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "_debug"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/home/bob/mm/bin/server.js",
+      "filenameRelative": "/home/bob/mm/bin/server.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMap": "both",
+      "sourceMaps": "both",
+      "sourceMapTarget": "server.js",
+      "sourceFileName": "server.js",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "basename": "server"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar _config = require('../config');\n\nvar _config2 = _interopRequireDefault(_config);\n\nvar _main = require('../server/main');\n\nvar _main2 = _interopRequireDefault(_main);\n\nvar _debug2 = require('debug');\n\nvar _debug3 = _interopRequireDefault(_debug2);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar debug = (0, _debug3.default)('app:bin:server');\nvar port = _config2.default.server_port;\nvar host = _config2.default.server_host;\n\n_main2.default.listen(port);\ndebug('Server is now running at http://' + host + ':' + port + '.');\ndebug('Server accessible via localhost:' + port + ' if you are using the project defaults.');\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNlcnZlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBOzs7O0FBQ0E7Ozs7QUFDQTs7Ozs7O0FBRUEsSUFBTSxRQUFRLHFCQUFPLGdCQUFQLENBQWQ7QUFDQSxJQUFNLE9BQU8saUJBQU8sV0FBcEI7QUFDQSxJQUFNLE9BQU8saUJBQU8sV0FBcEI7O0FBRUEsZUFBTyxNQUFQLENBQWMsSUFBZDtBQUNBLDJDQUF5QyxJQUF6QyxTQUFpRCxJQUFqRDtBQUNBLDJDQUF5QyxJQUF6QyIsImZpbGUiOiJzZXJ2ZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgY29uZmlnIGZyb20gJy4uL2NvbmZpZydcbmltcG9ydCBzZXJ2ZXIgZnJvbSAnLi4vc2VydmVyL21haW4nXG5pbXBvcnQgX2RlYnVnIGZyb20gJ2RlYnVnJ1xuXG5jb25zdCBkZWJ1ZyA9IF9kZWJ1ZygnYXBwOmJpbjpzZXJ2ZXInKVxuY29uc3QgcG9ydCA9IGNvbmZpZy5zZXJ2ZXJfcG9ydFxuY29uc3QgaG9zdCA9IGNvbmZpZy5zZXJ2ZXJfaG9zdFxuXG5zZXJ2ZXIubGlzdGVuKHBvcnQpXG5kZWJ1ZyhgU2VydmVyIGlzIG5vdyBydW5uaW5nIGF0IGh0dHA6Ly8ke2hvc3R9OiR7cG9ydH0uYClcbmRlYnVnKGBTZXJ2ZXIgYWNjZXNzaWJsZSB2aWEgbG9jYWxob3N0OiR7cG9ydH0gaWYgeW91IGFyZSB1c2luZyB0aGUgcHJvamVjdCBkZWZhdWx0cy5gKVxuIl19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "server.js"
+      ],
+      "names": [],
+      "mappings": ";;AAAA;;;;AACA;;;;AACA;;;;;;AAEA,IAAM,QAAQ,qBAAO,gBAAP,CAAd;AACA,IAAM,OAAO,iBAAO,WAApB;AACA,IAAM,OAAO,iBAAO,WAApB;;AAEA,eAAO,MAAP,CAAc,IAAd;AACA,2CAAyC,IAAzC,SAAiD,IAAjD;AACA,2CAAyC,IAAzC",
+      "file": "server.js",
+      "sourcesContent": [
+        "import config from '../config'\nimport server from '../server/main'\nimport _debug from 'debug'\n\nconst debug = _debug('app:bin:server')\nconst port = config.server_port\nconst host = config.server_host\n\nserver.listen(port)\ndebug(`Server is now running at http://${host}:${port}.`)\ndebug(`Server accessible via localhost:${port} if you are using the project defaults.`)\n"
+      ]
+    },
+    "mtime": 1468487700455
+  },
+  "{\"filename\":\"/home/bob/mm/config/index.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false}:6.10.4": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "path",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "path"
+              }
+            ]
+          },
+          {
+            "source": "debug",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "_debug"
+              }
+            ]
+          },
+          {
+            "source": "yargs",
+            "imported": [
+              "argv"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "argv",
+                "local": "argv"
+              }
+            ]
+          },
+          {
+            "source": "ip",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "ip"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/home/bob/mm/config/index.js",
+      "filenameRelative": "/home/bob/mm/config/index.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMap": "both",
+      "sourceMaps": "both",
+      "sourceMapTarget": "index.js",
+      "sourceFileName": "index.js",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "basename": "index"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _assign = require('babel-runtime/core-js/object/assign');\n\nvar _assign2 = _interopRequireDefault(_assign);\n\nvar _apply = require('babel-runtime/core-js/reflect/apply');\n\nvar _apply2 = _interopRequireDefault(_apply);\n\nvar _stringify = require('babel-runtime/core-js/json/stringify');\n\nvar _stringify2 = _interopRequireDefault(_stringify);\n\nvar _path = require('path');\n\nvar _path2 = _interopRequireDefault(_path);\n\nvar _debug2 = require('debug');\n\nvar _debug3 = _interopRequireDefault(_debug2);\n\nvar _yargs = require('yargs');\n\nvar _ip = require('ip');\n\nvar _ip2 = _interopRequireDefault(_ip);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n/* eslint key-spacing:0 spaced-comment:0 */\n\n\nvar localip = _ip2.default.address();\nvar debug = (0, _debug3.default)('app:config');\ndebug('Creating default configuration.');\n\n// ========================================================\n// Default Configuration\n// ========================================================\nvar config = {\n  env: process.env.NODE_ENV || 'development',\n\n  // ----------------------------------\n  // Project Structure\n  // ----------------------------------\n  path_base: _path2.default.resolve(__dirname, '..'),\n  dir_client: 'src',\n  dir_dist: 'dist',\n  dir_server: 'server',\n  dir_test: 'tests',\n\n  // ----------------------------------\n  // Server Configuration\n  // ----------------------------------\n  server_host: localip, // use string 'localhost' to prevent exposure on local network\n  server_port: process.env.PORT || 3000,\n\n  // ----------------------------------\n  // Compiler Configuration\n  // ----------------------------------\n  compiler_css_modules: true,\n  compiler_devtool: 'source-map',\n  compiler_hash_type: 'hash',\n  compiler_fail_on_warning: false,\n  compiler_quiet: false,\n  compiler_public_path: '/',\n  compiler_stats: {\n    chunks: false,\n    chunkModules: false,\n    colors: true\n  },\n  compiler_vendor: ['history', 'react', 'react-redux', 'react-router', 'react-router-redux', 'redux'],\n\n  // ----------------------------------\n  // Test Configuration\n  // ----------------------------------\n  coverage_reporters: [{ type: 'text-summary' }, { type: 'lcov', dir: 'coverage' }]\n};\n\n/************************************************\n-------------------------------------------------\n\nAll Internal Configuration Below\nEdit at Your Own Risk\n\n-------------------------------------------------\n************************************************/\n\n// ------------------------------------\n// Environment\n// ------------------------------------\n// N.B.: globals added here must _also_ be added to .eslintrc\nconfig.globals = {\n  'process.env': {\n    'NODE_ENV': (0, _stringify2.default)(config.env)\n  },\n  'NODE_ENV': config.env,\n  '__DEV__': config.env === 'development',\n  '__PROD__': config.env === 'production',\n  '__TEST__': config.env === 'test',\n  '__DEBUG__': config.env === 'development' && !_yargs.argv.no_debug,\n  '__COVERAGE__': !_yargs.argv.watch && config.env === 'test',\n  '__BASENAME__': (0, _stringify2.default)(process.env.BASENAME || '')\n};\n\n// ------------------------------------\n// Validate Vendor Dependencies\n// ------------------------------------\nvar pkg = require('../package.json');\n\nconfig.compiler_vendor = config.compiler_vendor.filter(function (dep) {\n  if (pkg.dependencies[dep]) return true;\n\n  debug('Package \"' + dep + '\" was not found as an npm dependency in package.json; ' + 'it won\\'t be included in the webpack vendor bundle.\\n       Consider removing it from vendor_dependencies in ~/config/index.js');\n});\n\n// ------------------------------------\n// Utilities\n// ------------------------------------\nvar resolve = _path2.default.resolve;\nvar base = function base() {\n  for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {\n    args[_key] = arguments[_key];\n  }\n\n  return (0, _apply2.default)(resolve, null, [config.path_base].concat(args));\n};\n\nconfig.utils_paths = {\n  base: base,\n  client: base.bind(null, config.dir_client),\n  dist: base.bind(null, config.dir_dist)\n};\n\n// ========================================================\n// Environment Configuration\n// ========================================================\ndebug('Looking for environment overrides for NODE_ENV \"' + config.env + '\".');\nvar environments = require('./environments').default;\nvar overrides = environments[config.env];\nif (overrides) {\n  debug('Found overrides, applying to default configuration.');\n  (0, _assign2.default)(config, overrides(config));\n} else {\n  debug('No environment overrides found, defaults will be used.');\n}\n\nexports.default = config;\n//# sourceMappingURL=data:application/json;base64,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QU1BO0FBQ0E7QUFDQTtBQUNBLDJEQUF5RCxPQUFPLEdBQWhFO0FBQ0EsSUFBTSxlQUFlLFFBQVEsZ0JBQVIsRUFBMEIsT0FBL0M7QUFDQSxJQUFNLFlBQVksYUFBYSxPQUFPLEdBQXBCLENBQWxCO0FBQ0EsSUFBSSxTQUFKLEVBQWU7QUFDYixRQUFNLHFEQUFOO0FBQ0Esd0JBQWMsTUFBZCxFQUFzQixVQUFVLE1BQVYsQ0FBdEI7QUFDRCxDQUhELE1BR087QUFDTCxRQUFNLHdEQUFOO0FBQ0Q7O2tCQUVjLE0iLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBlc2xpbnQga2V5LXNwYWNpbmc6MCBzcGFjZWQtY29tbWVudDowICovXG5pbXBvcnQgcGF0aCBmcm9tICdwYXRoJ1xuaW1wb3J0IF9kZWJ1ZyBmcm9tICdkZWJ1ZydcbmltcG9ydCB7IGFyZ3YgfSBmcm9tICd5YXJncydcbmltcG9ydCBpcCBmcm9tICdpcCdcblxuY29uc3QgbG9jYWxpcCA9IGlwLmFkZHJlc3MoKVxuY29uc3QgZGVidWcgPSBfZGVidWcoJ2FwcDpjb25maWcnKVxuZGVidWcoJ0NyZWF0aW5nIGRlZmF1bHQgY29uZmlndXJhdGlvbi4nKVxuXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gRGVmYXVsdCBDb25maWd1cmF0aW9uXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuY29uc3QgY29uZmlnID0ge1xuICBlbnYgOiBwcm9jZXNzLmVudi5OT0RFX0VOViB8fCAnZGV2ZWxvcG1lbnQnLFxuXG4gIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbiAgLy8gUHJvamVjdCBTdHJ1Y3R1cmVcbiAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuICBwYXRoX2Jhc2UgIDogcGF0aC5yZXNvbHZlKF9fZGlybmFtZSwgJy4uJyksXG4gIGRpcl9jbGllbnQgOiAnc3JjJyxcbiAgZGlyX2Rpc3QgICA6ICdkaXN0JyxcbiAgZGlyX3NlcnZlciA6ICdzZXJ2ZXInLFxuICBkaXJfdGVzdCAgIDogJ3Rlc3RzJyxcblxuICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4gIC8vIFNlcnZlciBDb25maWd1cmF0aW9uXG4gIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbiAgc2VydmVyX2hvc3QgOiBsb2NhbGlwLCAvLyB1c2Ugc3RyaW5nICdsb2NhbGhvc3QnIHRvIHByZXZlbnQgZXhwb3N1cmUgb24gbG9jYWwgbmV0d29ya1xuICBzZXJ2ZXJfcG9ydCA6IHByb2Nlc3MuZW52LlBPUlQgfHwgMzAwMCxcblxuICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4gIC8vIENvbXBpbGVyIENvbmZpZ3VyYXRpb25cbiAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuICBjb21waWxlcl9jc3NfbW9kdWxlcyAgICAgOiB0cnVlLFxuICBjb21waWxlcl9kZXZ0b29sICAgICAgICAgOiAnc291cmNlLW1hcCcsXG4gIGNvbXBpbGVyX2hhc2hfdHlwZSAgICAgICA6ICdoYXNoJyxcbiAgY29tcGlsZXJfZmFpbF9vbl93YXJuaW5nIDogZmFsc2UsXG4gIGNvbXBpbGVyX3F1aWV0ICAgICAgICAgICA6IGZhbHNlLFxuICBjb21waWxlcl9wdWJsaWNfcGF0aCAgICAgOiAnLycsXG4gIGNvbXBpbGVyX3N0YXRzICAgICAgICAgICA6IHtcbiAgICBjaHVua3MgOiBmYWxzZSxcbiAgICBjaHVua01vZHVsZXMgOiBmYWxzZSxcbiAgICBjb2xvcnMgOiB0cnVlXG4gIH0sXG4gIGNvbXBpbGVyX3ZlbmRvciA6IFtcbiAgICAnaGlzdG9yeScsXG4gICAgJ3JlYWN0JyxcbiAgICAncmVhY3QtcmVkdXgnLFxuICAgICdyZWFjdC1yb3V0ZXInLFxuICAgICdyZWFjdC1yb3V0ZXItcmVkdXgnLFxuICAgICdyZWR1eCdcbiAgXSxcblxuICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4gIC8vIFRlc3QgQ29uZmlndXJhdGlvblxuICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4gIGNvdmVyYWdlX3JlcG9ydGVycyA6IFtcbiAgICB7IHR5cGUgOiAndGV4dC1zdW1tYXJ5JyB9LFxuICAgIHsgdHlwZSA6ICdsY292JywgZGlyIDogJ2NvdmVyYWdlJyB9XG4gIF1cbn1cblxuLyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKlxuLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuXG5BbGwgSW50ZXJuYWwgQ29uZmlndXJhdGlvbiBCZWxvd1xuRWRpdCBhdCBZb3VyIE93biBSaXNrXG5cbi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKi9cblxuLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4vLyBFbnZpcm9ubWVudFxuLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4vLyBOLkIuOiBnbG9iYWxzIGFkZGVkIGhlcmUgbXVzdCBfYWxzb18gYmUgYWRkZWQgdG8gLmVzbGludHJjXG5jb25maWcuZ2xvYmFscyA9IHtcbiAgJ3Byb2Nlc3MuZW52JyAgOiB7XG4gICAgJ05PREVfRU5WJyA6IEpTT04uc3RyaW5naWZ5KGNvbmZpZy5lbnYpXG4gIH0sXG4gICdOT0RFX0VOVicgICAgIDogY29uZmlnLmVudixcbiAgJ19fREVWX18nICAgICAgOiBjb25maWcuZW52ID09PSAnZGV2ZWxvcG1lbnQnLFxuICAnX19QUk9EX18nICAgICA6IGNvbmZpZy5lbnYgPT09ICdwcm9kdWN0aW9uJyxcbiAgJ19fVEVTVF9fJyAgICAgOiBjb25maWcuZW52ID09PSAndGVzdCcsXG4gICdfX0RFQlVHX18nICAgIDogY29uZmlnLmVudiA9PT0gJ2RldmVsb3BtZW50JyAmJiAhYXJndi5ub19kZWJ1ZyxcbiAgJ19fQ09WRVJBR0VfXycgOiAhYXJndi53YXRjaCAmJiBjb25maWcuZW52ID09PSAndGVzdCcsXG4gICdfX0JBU0VOQU1FX18nIDogSlNPTi5zdHJpbmdpZnkocHJvY2Vzcy5lbnYuQkFTRU5BTUUgfHwgJycpXG59XG5cbi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuLy8gVmFsaWRhdGUgVmVuZG9yIERlcGVuZGVuY2llc1xuLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG5jb25zdCBwa2cgPSByZXF1aXJlKCcuLi9wYWNrYWdlLmpzb24nKVxuXG5jb25maWcuY29tcGlsZXJfdmVuZG9yID0gY29uZmlnLmNvbXBpbGVyX3ZlbmRvclxuICAuZmlsdGVyKChkZXApID0+IHtcbiAgICBpZiAocGtnLmRlcGVuZGVuY2llc1tkZXBdKSByZXR1cm4gdHJ1ZVxuXG4gICAgZGVidWcoXG4gICAgICBgUGFja2FnZSBcIiR7ZGVwfVwiIHdhcyBub3QgZm91bmQgYXMgYW4gbnBtIGRlcGVuZGVuY3kgaW4gcGFja2FnZS5qc29uOyBgICtcbiAgICAgIGBpdCB3b24ndCBiZSBpbmNsdWRlZCBpbiB0aGUgd2VicGFjayB2ZW5kb3IgYnVuZGxlLlxuICAgICAgIENvbnNpZGVyIHJlbW92aW5nIGl0IGZyb20gdmVuZG9yX2RlcGVuZGVuY2llcyBpbiB+L2NvbmZpZy9pbmRleC5qc2BcbiAgICApXG4gIH0pXG5cbi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuLy8gVXRpbGl0aWVzXG4vLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbmNvbnN0IHJlc29sdmUgPSBwYXRoLnJlc29sdmVcbmNvbnN0IGJhc2UgPSAoLi4uYXJncykgPT5cbiAgUmVmbGVjdC5hcHBseShyZXNvbHZlLCBudWxsLCBbY29uZmlnLnBhdGhfYmFzZSwgLi4uYXJnc10pXG5cbmNvbmZpZy51dGlsc19wYXRocyA9IHtcbiAgYmFzZSAgIDogYmFzZSxcbiAgY2xpZW50IDogYmFzZS5iaW5kKG51bGwsIGNvbmZpZy5kaXJfY2xpZW50KSxcbiAgZGlzdCAgIDogYmFzZS5iaW5kKG51bGwsIGNvbmZpZy5kaXJfZGlzdClcbn1cblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbi8vIEVudmlyb25tZW50IENvbmZpZ3VyYXRpb25cbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5kZWJ1ZyhgTG9va2luZyBmb3IgZW52aXJvbm1lbnQgb3ZlcnJpZGVzIGZvciBOT0RFX0VOViBcIiR7Y29uZmlnLmVudn1cIi5gKVxuY29uc3QgZW52aXJvbm1lbnRzID0gcmVxdWlyZSgnLi9lbnZpcm9ubWVudHMnKS5kZWZhdWx0XG5jb25zdCBvdmVycmlkZXMgPSBlbnZpcm9ubWVudHNbY29uZmlnLmVudl1cbmlmIChvdmVycmlkZXMpIHtcbiAgZGVidWcoJ0ZvdW5kIG92ZXJyaWRlcywgYXBwbHlpbmcgdG8gZGVmYXVsdCBjb25maWd1cmF0aW9uLicpXG4gIE9iamVjdC5hc3NpZ24oY29uZmlnLCBvdmVycmlkZXMoY29uZmlnKSlcbn0gZWxzZSB7XG4gIGRlYnVnKCdObyBlbnZpcm9ubWVudCBvdmVycmlkZXMgZm91bmQsIGRlZmF1bHRzIHdpbGwgYmUgdXNlZC4nKVxufVxuXG5leHBvcnQgZGVmYXVsdCBjb25maWdcbiJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "index.js"
+      ],
+      "names": [],
+      "mappings": ";;;;;;;;;;;;;;;;;;AACA;;;;AACA;;;;AACA;;AACA;;;;;;AAJA;;;AAMA,IAAM,UAAU,aAAG,OAAH,EAAhB;AACA,IAAM,QAAQ,qBAAO,YAAP,CAAd;AACA,MAAM,iCAAN;;AAEA;AACA;AACA;AACA,IAAM,SAAS;AACb,OAAM,QAAQ,GAAR,CAAY,QAAZ,IAAwB,aADjB;;AAGb;AACA;AACA;AACA,aAAa,eAAK,OAAL,CAAa,SAAb,EAAwB,IAAxB,CANA;AAOb,cAAa,KAPA;AAQb,YAAa,MARA;AASb,cAAa,QATA;AAUb,YAAa,OAVA;;AAYb;AACA;AACA;AACA,eAAc,OAfD,EAeU;AACvB,eAAc,QAAQ,GAAR,CAAY,IAAZ,IAAoB,IAhBrB;;AAkBb;AACA;AACA;AACA,wBAA2B,IArBd;AAsBb,oBAA2B,YAtBd;AAuBb,sBAA2B,MAvBd;AAwBb,4BAA2B,KAxBd;AAyBb,kBAA2B,KAzBd;AA0Bb,wBAA2B,GA1Bd;AA2Bb,kBAA2B;AACzB,YAAS,KADgB;AAEzB,kBAAe,KAFU;AAGzB,YAAS;AAHgB,GA3Bd;AAgCb,mBAAkB,CAChB,SADgB,EAEhB,OAFgB,EAGhB,aAHgB,EAIhB,cAJgB,EAKhB,oBALgB,EAMhB,OANgB,CAhCL;;AAyCb;AACA;AACA;AACA,sBAAqB,CACnB,EAAE,MAAO,cAAT,EADmB,EAEnB,EAAE,MAAO,MAAT,EAAiB,KAAM,UAAvB,EAFmB;AA5CR,CAAf;;AAkDA;;;;;;;;;AASA;AACA;AACA;AACA;AACA,OAAO,OAAP,GAAiB;AACf,iBAAiB;AACf,gBAAa,yBAAe,OAAO,GAAtB;AADE,GADF;AAIf,cAAiB,OAAO,GAJT;AAKf,aAAiB,OAAO,GAAP,KAAe,aALjB;AAMf,cAAiB,OAAO,GAAP,KAAe,YANjB;AAOf,cAAiB,OAAO,GAAP,KAAe,MAPjB;AAQf,eAAiB,OAAO,GAAP,KAAe,aAAf,IAAgC,CAAC,YAAK,QARxC;AASf,kBAAiB,CAAC,YAAK,KAAN,IAAe,OAAO,GAAP,KAAe,MAThC;AAUf,kBAAiB,yBAAe,QAAQ,GAAR,CAAY,QAAZ,IAAwB,EAAvC;AAVF,CAAjB;;AAaA;AACA;AACA;AACA,IAAM,MAAM,QAAQ,iBAAR,CAAZ;;AAEA,OAAO,eAAP,GAAyB,OAAO,eAAP,CACtB,MADsB,CACf,UAAC,GAAD,EAAS;AACf,MAAI,IAAI,YAAJ,CAAiB,GAAjB,CAAJ,EAA2B,OAAO,IAAP;;AAE3B,QACE,cAAY,GAAZ,8LADF;AAKD,CATsB,CAAzB;;AAWA;AACA;AACA;AACA,IAAM,UAAU,eAAK,OAArB;AACA,IAAM,OAAO,SAAP,IAAO;AAAA,oCAAI,IAAJ;AAAI,QAAJ;AAAA;;AAAA,SACX,qBAAc,OAAd,EAAuB,IAAvB,GAA8B,OAAO,SAArC,SAAmD,IAAnD,EADW;AAAA,CAAb;;AAGA,OAAO,WAAP,GAAqB;AACnB,QAAS,IADU;AAEnB,UAAS,KAAK,IAAL,CAAU,IAAV,EAAgB,OAAO,UAAvB,CAFU;AAGnB,QAAS,KAAK,IAAL,CAAU,IAAV,EAAgB,OAAO,QAAvB;AAHU,CAArB;;AAMA;AACA;AACA;AACA,2DAAyD,OAAO,GAAhE;AACA,IAAM,eAAe,QAAQ,gBAAR,EAA0B,OAA/C;AACA,IAAM,YAAY,aAAa,OAAO,GAApB,CAAlB;AACA,IAAI,SAAJ,EAAe;AACb,QAAM,qDAAN;AACA,wBAAc,MAAd,EAAsB,UAAU,MAAV,CAAtB;AACD,CAHD,MAGO;AACL,QAAM,wDAAN;AACD;;kBAEc,M",
+      "file": "index.js",
+      "sourcesContent": [
+        "/* eslint key-spacing:0 spaced-comment:0 */\nimport path from 'path'\nimport _debug from 'debug'\nimport { argv } from 'yargs'\nimport ip from 'ip'\n\nconst localip = ip.address()\nconst debug = _debug('app:config')\ndebug('Creating default configuration.')\n\n// ========================================================\n// Default Configuration\n// ========================================================\nconst config = {\n  env : process.env.NODE_ENV || 'development',\n\n  // ----------------------------------\n  // Project Structure\n  // ----------------------------------\n  path_base  : path.resolve(__dirname, '..'),\n  dir_client : 'src',\n  dir_dist   : 'dist',\n  dir_server : 'server',\n  dir_test   : 'tests',\n\n  // ----------------------------------\n  // Server Configuration\n  // ----------------------------------\n  server_host : localip, // use string 'localhost' to prevent exposure on local network\n  server_port : process.env.PORT || 3000,\n\n  // ----------------------------------\n  // Compiler Configuration\n  // ----------------------------------\n  compiler_css_modules     : true,\n  compiler_devtool         : 'source-map',\n  compiler_hash_type       : 'hash',\n  compiler_fail_on_warning : false,\n  compiler_quiet           : false,\n  compiler_public_path     : '/',\n  compiler_stats           : {\n    chunks : false,\n    chunkModules : false,\n    colors : true\n  },\n  compiler_vendor : [\n    'history',\n    'react',\n    'react-redux',\n    'react-router',\n    'react-router-redux',\n    'redux'\n  ],\n\n  // ----------------------------------\n  // Test Configuration\n  // ----------------------------------\n  coverage_reporters : [\n    { type : 'text-summary' },\n    { type : 'lcov', dir : 'coverage' }\n  ]\n}\n\n/************************************************\n-------------------------------------------------\n\nAll Internal Configuration Below\nEdit at Your Own Risk\n\n-------------------------------------------------\n************************************************/\n\n// ------------------------------------\n// Environment\n// ------------------------------------\n// N.B.: globals added here must _also_ be added to .eslintrc\nconfig.globals = {\n  'process.env'  : {\n    'NODE_ENV' : JSON.stringify(config.env)\n  },\n  'NODE_ENV'     : config.env,\n  '__DEV__'      : config.env === 'development',\n  '__PROD__'     : config.env === 'production',\n  '__TEST__'     : config.env === 'test',\n  '__DEBUG__'    : config.env === 'development' && !argv.no_debug,\n  '__COVERAGE__' : !argv.watch && config.env === 'test',\n  '__BASENAME__' : JSON.stringify(process.env.BASENAME || '')\n}\n\n// ------------------------------------\n// Validate Vendor Dependencies\n// ------------------------------------\nconst pkg = require('../package.json')\n\nconfig.compiler_vendor = config.compiler_vendor\n  .filter((dep) => {\n    if (pkg.dependencies[dep]) return true\n\n    debug(\n      `Package \"${dep}\" was not found as an npm dependency in package.json; ` +\n      `it won't be included in the webpack vendor bundle.\n       Consider removing it from vendor_dependencies in ~/config/index.js`\n    )\n  })\n\n// ------------------------------------\n// Utilities\n// ------------------------------------\nconst resolve = path.resolve\nconst base = (...args) =>\n  Reflect.apply(resolve, null, [config.path_base, ...args])\n\nconfig.utils_paths = {\n  base   : base,\n  client : base.bind(null, config.dir_client),\n  dist   : base.bind(null, config.dir_dist)\n}\n\n// ========================================================\n// Environment Configuration\n// ========================================================\ndebug(`Looking for environment overrides for NODE_ENV \"${config.env}\".`)\nconst environments = require('./environments').default\nconst overrides = environments[config.env]\nif (overrides) {\n  debug('Found overrides, applying to default configuration.')\n  Object.assign(config, overrides(config))\n} else {\n  debug('No environment overrides found, defaults will be used.')\n}\n\nexport default config\n"
+      ]
+    },
+    "mtime": 1468487700459
+  },
+  "{\"filename\":\"/home/bob/mm/config/environments.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false}:6.10.4": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/home/bob/mm/config/environments.js",
+      "filenameRelative": "/home/bob/mm/config/environments.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMap": "both",
+      "sourceMaps": "both",
+      "sourceMapTarget": "environments.js",
+      "sourceFileName": "environments.js",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "basename": "environments"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n// Here is where you can define configuration overrides based on the execution environment.\n// Supply a key to the default export matching the NODE_ENV that you wish to target, and\n// the base configuration will apply your overrides before exporting itself.\nexports.default = {\n  // ======================================================\n  // Overrides when NODE_ENV === 'development'\n  // ======================================================\n  // NOTE: In development, we use an explicit public path when the assets\n  // are served webpack by to fix this issue:\n  // http://stackoverflow.com/questions/34133808/webpack-ots-parsing-error-loading-fonts/34133809#34133809\n  development: function development(config) {\n    return {\n      compiler_public_path: 'http://' + config.server_host + ':' + config.server_port + '/',\n      proxy: {\n        enabled: false,\n        options: {\n          host: 'http://localhost:8000',\n          match: /^\\/api\\/.*/\n        }\n      }\n    };\n  },\n\n  // ======================================================\n  // Overrides when NODE_ENV === 'production'\n  // ======================================================\n  production: function production(config) {\n    return {\n      compiler_public_path: '/',\n      compiler_fail_on_warning: false,\n      compiler_hash_type: 'chunkhash',\n      compiler_devtool: null,\n      compiler_stats: {\n        chunks: true,\n        chunkModules: true,\n        colors: true\n      }\n    };\n  }\n};\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImVudmlyb25tZW50cy5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7OztBQUFBO0FBQ0E7QUFDQTtrQkFDZTtBQUNiO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLGVBQWEscUJBQUMsTUFBRDtBQUFBLFdBQWE7QUFDeEIsd0NBQWdDLE9BQU8sV0FBdkMsU0FBc0QsT0FBTyxXQUE3RCxNQUR3QjtBQUV4QixhQUFPO0FBQ0wsaUJBQVMsS0FESjtBQUVMLGlCQUFTO0FBQ1AsZ0JBQU0sdUJBREM7QUFFUCxpQkFBTztBQUZBO0FBRko7QUFGaUIsS0FBYjtBQUFBLEdBUEE7O0FBa0JiO0FBQ0E7QUFDQTtBQUNBLGNBQVksb0JBQUMsTUFBRDtBQUFBLFdBQWE7QUFDdkIsNEJBQXNCLEdBREM7QUFFdkIsZ0NBQTBCLEtBRkg7QUFHdkIsMEJBQW9CLFdBSEc7QUFJdkIsd0JBQWtCLElBSks7QUFLdkIsc0JBQWdCO0FBQ2QsZ0JBQVEsSUFETTtBQUVkLHNCQUFjLElBRkE7QUFHZCxnQkFBUTtBQUhNO0FBTE8sS0FBYjtBQUFBO0FBckJDLEMiLCJmaWxlIjoiZW52aXJvbm1lbnRzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gSGVyZSBpcyB3aGVyZSB5b3UgY2FuIGRlZmluZSBjb25maWd1cmF0aW9uIG92ZXJyaWRlcyBiYXNlZCBvbiB0aGUgZXhlY3V0aW9uIGVudmlyb25tZW50LlxuLy8gU3VwcGx5IGEga2V5IHRvIHRoZSBkZWZhdWx0IGV4cG9ydCBtYXRjaGluZyB0aGUgTk9ERV9FTlYgdGhhdCB5b3Ugd2lzaCB0byB0YXJnZXQsIGFuZFxuLy8gdGhlIGJhc2UgY29uZmlndXJhdGlvbiB3aWxsIGFwcGx5IHlvdXIgb3ZlcnJpZGVzIGJlZm9yZSBleHBvcnRpbmcgaXRzZWxmLlxuZXhwb3J0IGRlZmF1bHQge1xuICAvLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbiAgLy8gT3ZlcnJpZGVzIHdoZW4gTk9ERV9FTlYgPT09ICdkZXZlbG9wbWVudCdcbiAgLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4gIC8vIE5PVEU6IEluIGRldmVsb3BtZW50LCB3ZSB1c2UgYW4gZXhwbGljaXQgcHVibGljIHBhdGggd2hlbiB0aGUgYXNzZXRzXG4gIC8vIGFyZSBzZXJ2ZWQgd2VicGFjayBieSB0byBmaXggdGhpcyBpc3N1ZTpcbiAgLy8gaHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy8zNDEzMzgwOC93ZWJwYWNrLW90cy1wYXJzaW5nLWVycm9yLWxvYWRpbmctZm9udHMvMzQxMzM4MDkjMzQxMzM4MDlcbiAgZGV2ZWxvcG1lbnQ6IChjb25maWcpID0+ICh7XG4gICAgY29tcGlsZXJfcHVibGljX3BhdGg6IGBodHRwOi8vJHtjb25maWcuc2VydmVyX2hvc3R9OiR7Y29uZmlnLnNlcnZlcl9wb3J0fS9gLFxuICAgIHByb3h5OiB7XG4gICAgICBlbmFibGVkOiBmYWxzZSxcbiAgICAgIG9wdGlvbnM6IHtcbiAgICAgICAgaG9zdDogJ2h0dHA6Ly9sb2NhbGhvc3Q6ODAwMCcsXG4gICAgICAgIG1hdGNoOiAvXlxcL2FwaVxcLy4qL1xuICAgICAgfVxuICAgIH1cbiAgfSksXG5cbiAgLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4gIC8vIE92ZXJyaWRlcyB3aGVuIE5PREVfRU5WID09PSAncHJvZHVjdGlvbidcbiAgLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4gIHByb2R1Y3Rpb246IChjb25maWcpID0+ICh7XG4gICAgY29tcGlsZXJfcHVibGljX3BhdGg6ICcvJyxcbiAgICBjb21waWxlcl9mYWlsX29uX3dhcm5pbmc6IGZhbHNlLFxuICAgIGNvbXBpbGVyX2hhc2hfdHlwZTogJ2NodW5raGFzaCcsXG4gICAgY29tcGlsZXJfZGV2dG9vbDogbnVsbCxcbiAgICBjb21waWxlcl9zdGF0czoge1xuICAgICAgY2h1bmtzOiB0cnVlLFxuICAgICAgY2h1bmtNb2R1bGVzOiB0cnVlLFxuICAgICAgY29sb3JzOiB0cnVlXG4gICAgfVxuICB9KVxufVxuIl19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "environments.js"
+      ],
+      "names": [],
+      "mappings": ";;;;;AAAA;AACA;AACA;kBACe;AACb;AACA;AACA;AACA;AACA;AACA;AACA,eAAa,qBAAC,MAAD;AAAA,WAAa;AACxB,wCAAgC,OAAO,WAAvC,SAAsD,OAAO,WAA7D,MADwB;AAExB,aAAO;AACL,iBAAS,KADJ;AAEL,iBAAS;AACP,gBAAM,uBADC;AAEP,iBAAO;AAFA;AAFJ;AAFiB,KAAb;AAAA,GAPA;;AAkBb;AACA;AACA;AACA,cAAY,oBAAC,MAAD;AAAA,WAAa;AACvB,4BAAsB,GADC;AAEvB,gCAA0B,KAFH;AAGvB,0BAAoB,WAHG;AAIvB,wBAAkB,IAJK;AAKvB,sBAAgB;AACd,gBAAQ,IADM;AAEd,sBAAc,IAFA;AAGd,gBAAQ;AAHM;AALO,KAAb;AAAA;AArBC,C",
+      "file": "environments.js",
+      "sourcesContent": [
+        "// Here is where you can define configuration overrides based on the execution environment.\n// Supply a key to the default export matching the NODE_ENV that you wish to target, and\n// the base configuration will apply your overrides before exporting itself.\nexport default {\n  // ======================================================\n  // Overrides when NODE_ENV === 'development'\n  // ======================================================\n  // NOTE: In development, we use an explicit public path when the assets\n  // are served webpack by to fix this issue:\n  // http://stackoverflow.com/questions/34133808/webpack-ots-parsing-error-loading-fonts/34133809#34133809\n  development: (config) => ({\n    compiler_public_path: `http://${config.server_host}:${config.server_port}/`,\n    proxy: {\n      enabled: false,\n      options: {\n        host: 'http://localhost:8000',\n        match: /^\\/api\\/.*/\n      }\n    }\n  }),\n\n  // ======================================================\n  // Overrides when NODE_ENV === 'production'\n  // ======================================================\n  production: (config) => ({\n    compiler_public_path: '/',\n    compiler_fail_on_warning: false,\n    compiler_hash_type: 'chunkhash',\n    compiler_devtool: null,\n    compiler_stats: {\n      chunks: true,\n      chunkModules: true,\n      colors: true\n    }\n  })\n}\n"
+      ]
+    },
+    "mtime": 1468487700459
+  },
+  "{\"filename\":\"/home/bob/mm/server/main.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false}:6.10.4": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "koa",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "Koa"
+              }
+            ]
+          },
+          {
+            "source": "koa-convert",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "convert"
+              }
+            ]
+          },
+          {
+            "source": "webpack",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "webpack"
+              }
+            ]
+          },
+          {
+            "source": "../build/webpack.config",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "webpackConfig"
+              }
+            ]
+          },
+          {
+            "source": "koa-connect-history-api-fallback",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "historyApiFallback"
+              }
+            ]
+          },
+          {
+            "source": "koa-static",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "serve"
+              }
+            ]
+          },
+          {
+            "source": "koa-proxy",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "proxy"
+              }
+            ]
+          },
+          {
+            "source": "debug",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "_debug"
+              }
+            ]
+          },
+          {
+            "source": "../config",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "config"
+              }
+            ]
+          },
+          {
+            "source": "./middleware/webpack-dev",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "webpackDevMiddleware"
+              }
+            ]
+          },
+          {
+            "source": "./middleware/webpack-hmr",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "webpackHMRMiddleware"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/home/bob/mm/server/main.js",
+      "filenameRelative": "/home/bob/mm/server/main.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMap": "both",
+      "sourceMaps": "both",
+      "sourceMapTarget": "main.js",
+      "sourceFileName": "main.js",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "basename": "main"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _koa = require('koa');\n\nvar _koa2 = _interopRequireDefault(_koa);\n\nvar _koaConvert = require('koa-convert');\n\nvar _koaConvert2 = _interopRequireDefault(_koaConvert);\n\nvar _webpack = require('webpack');\n\nvar _webpack2 = _interopRequireDefault(_webpack);\n\nvar _webpack3 = require('../build/webpack.config');\n\nvar _webpack4 = _interopRequireDefault(_webpack3);\n\nvar _koaConnectHistoryApiFallback = require('koa-connect-history-api-fallback');\n\nvar _koaConnectHistoryApiFallback2 = _interopRequireDefault(_koaConnectHistoryApiFallback);\n\nvar _koaStatic = require('koa-static');\n\nvar _koaStatic2 = _interopRequireDefault(_koaStatic);\n\nvar _koaProxy = require('koa-proxy');\n\nvar _koaProxy2 = _interopRequireDefault(_koaProxy);\n\nvar _debug2 = require('debug');\n\nvar _debug3 = _interopRequireDefault(_debug2);\n\nvar _config = require('../config');\n\nvar _config2 = _interopRequireDefault(_config);\n\nvar _webpackDev = require('./middleware/webpack-dev');\n\nvar _webpackDev2 = _interopRequireDefault(_webpackDev);\n\nvar _webpackHmr = require('./middleware/webpack-hmr');\n\nvar _webpackHmr2 = _interopRequireDefault(_webpackHmr);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar debug = (0, _debug3.default)('app:server');\nvar paths = _config2.default.utils_paths;\nvar app = new _koa2.default();\n\n// Enable koa-proxy if it has been enabled in the config.\nif (_config2.default.proxy && _config2.default.proxy.enabled) {\n  app.use((0, _koaConvert2.default)((0, _koaProxy2.default)(_config2.default.proxy.options)));\n}\n\n// This rewrites all routes requests to the root /index.html file\n// (ignoring file requests). If you want to implement isomorphic\n// rendering, you'll want to remove this middleware.\napp.use((0, _koaConvert2.default)((0, _koaConnectHistoryApiFallback2.default)({\n  verbose: false\n})));\n\n// ------------------------------------\n// Apply Webpack HMR Middleware\n// ------------------------------------\nif (_config2.default.env === 'development') {\n  var compiler = (0, _webpack2.default)(_webpack4.default);\n\n  // Enable webpack-dev and webpack-hot middleware\n  var publicPath = _webpack4.default.output.publicPath;\n\n\n  app.use((0, _webpackDev2.default)(compiler, publicPath));\n  app.use((0, _webpackHmr2.default)(compiler));\n\n  // Serve static assets from ~/src/static since Webpack is unaware of\n  // these files. This middleware doesn't need to be enabled outside\n  // of development since this directory will be copied into ~/dist\n  // when the application is compiled.\n  app.use((0, _koaStatic2.default)(paths.client('static')));\n} else {\n  debug('Server is being run outside of live development mode, meaning it will ' + 'only serve the compiled application bundle in ~/dist. Generally you ' + 'do not need an application server for this and can instead use a web ' + 'server such as nginx to serve your static files. See the \"deployment\" ' + 'section in the README for more information on deployment strategies.');\n\n  // Serving ~/dist by default. Ideally these files should be served by\n  // the web server and not the app server, but this helps to demo the\n  // server in production.\n  app.use((0, _koaStatic2.default)(paths.dist()));\n}\n\nexports.default = app;\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUE7Ozs7QUFDQTs7OztBQUNBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7O0FBQ0E7Ozs7QUFDQTs7Ozs7O0FBRUEsSUFBTSxRQUFRLHFCQUFPLFlBQVAsQ0FBZDtBQUNBLElBQU0sUUFBUSxpQkFBTyxXQUFyQjtBQUNBLElBQU0sTUFBTSxtQkFBWjs7QUFFQTtBQUNBLElBQUksaUJBQU8sS0FBUCxJQUFnQixpQkFBTyxLQUFQLENBQWEsT0FBakMsRUFBMEM7QUFDeEMsTUFBSSxHQUFKLENBQVEsMEJBQVEsd0JBQU0saUJBQU8sS0FBUCxDQUFhLE9BQW5CLENBQVIsQ0FBUjtBQUNEOztBQUVEO0FBQ0E7QUFDQTtBQUNBLElBQUksR0FBSixDQUFRLDBCQUFRLDRDQUFtQjtBQUNqQyxXQUFTO0FBRHdCLENBQW5CLENBQVIsQ0FBUjs7QUFJQTtBQUNBO0FBQ0E7QUFDQSxJQUFJLGlCQUFPLEdBQVAsS0FBZSxhQUFuQixFQUFrQztBQUNoQyxNQUFNLFdBQVcseUNBQWpCOztBQUVBO0FBSGdDLE1BSXhCLFVBSndCLEdBSVQsa0JBQWMsTUFKTCxDQUl4QixVQUp3Qjs7O0FBTWhDLE1BQUksR0FBSixDQUFRLDBCQUFxQixRQUFyQixFQUErQixVQUEvQixDQUFSO0FBQ0EsTUFBSSxHQUFKLENBQVEsMEJBQXFCLFFBQXJCLENBQVI7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQSxNQUFJLEdBQUosQ0FBUSx5QkFBTSxNQUFNLE1BQU4sQ0FBYSxRQUFiLENBQU4sQ0FBUjtBQUNELENBZEQsTUFjTztBQUNMLFFBQ0UsMkVBQ0Esc0VBREEsR0FFQSx1RUFGQSxHQUdBLHdFQUhBLEdBSUEsc0VBTEY7O0FBUUE7QUFDQTtBQUNBO0FBQ0EsTUFBSSxHQUFKLENBQVEseUJBQU0sTUFBTSxJQUFOLEVBQU4sQ0FBUjtBQUNEOztrQkFFYyxHIiwiZmlsZSI6Im1haW4uanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgS29hIGZyb20gJ2tvYSdcbmltcG9ydCBjb252ZXJ0IGZyb20gJ2tvYS1jb252ZXJ0J1xuaW1wb3J0IHdlYnBhY2sgZnJvbSAnd2VicGFjaydcbmltcG9ydCB3ZWJwYWNrQ29uZmlnIGZyb20gJy4uL2J1aWxkL3dlYnBhY2suY29uZmlnJ1xuaW1wb3J0IGhpc3RvcnlBcGlGYWxsYmFjayBmcm9tICdrb2EtY29ubmVjdC1oaXN0b3J5LWFwaS1mYWxsYmFjaydcbmltcG9ydCBzZXJ2ZSBmcm9tICdrb2Etc3RhdGljJ1xuaW1wb3J0IHByb3h5IGZyb20gJ2tvYS1wcm94eSdcbmltcG9ydCBfZGVidWcgZnJvbSAnZGVidWcnXG5pbXBvcnQgY29uZmlnIGZyb20gJy4uL2NvbmZpZydcbmltcG9ydCB3ZWJwYWNrRGV2TWlkZGxld2FyZSBmcm9tICcuL21pZGRsZXdhcmUvd2VicGFjay1kZXYnXG5pbXBvcnQgd2VicGFja0hNUk1pZGRsZXdhcmUgZnJvbSAnLi9taWRkbGV3YXJlL3dlYnBhY2staG1yJ1xuXG5jb25zdCBkZWJ1ZyA9IF9kZWJ1ZygnYXBwOnNlcnZlcicpXG5jb25zdCBwYXRocyA9IGNvbmZpZy51dGlsc19wYXRoc1xuY29uc3QgYXBwID0gbmV3IEtvYSgpXG5cbi8vIEVuYWJsZSBrb2EtcHJveHkgaWYgaXQgaGFzIGJlZW4gZW5hYmxlZCBpbiB0aGUgY29uZmlnLlxuaWYgKGNvbmZpZy5wcm94eSAmJiBjb25maWcucHJveHkuZW5hYmxlZCkge1xuICBhcHAudXNlKGNvbnZlcnQocHJveHkoY29uZmlnLnByb3h5Lm9wdGlvbnMpKSlcbn1cblxuLy8gVGhpcyByZXdyaXRlcyBhbGwgcm91dGVzIHJlcXVlc3RzIHRvIHRoZSByb290IC9pbmRleC5odG1sIGZpbGVcbi8vIChpZ25vcmluZyBmaWxlIHJlcXVlc3RzKS4gSWYgeW91IHdhbnQgdG8gaW1wbGVtZW50IGlzb21vcnBoaWNcbi8vIHJlbmRlcmluZywgeW91J2xsIHdhbnQgdG8gcmVtb3ZlIHRoaXMgbWlkZGxld2FyZS5cbmFwcC51c2UoY29udmVydChoaXN0b3J5QXBpRmFsbGJhY2soe1xuICB2ZXJib3NlOiBmYWxzZVxufSkpKVxuXG4vLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbi8vIEFwcGx5IFdlYnBhY2sgSE1SIE1pZGRsZXdhcmVcbi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuaWYgKGNvbmZpZy5lbnYgPT09ICdkZXZlbG9wbWVudCcpIHtcbiAgY29uc3QgY29tcGlsZXIgPSB3ZWJwYWNrKHdlYnBhY2tDb25maWcpXG5cbiAgLy8gRW5hYmxlIHdlYnBhY2stZGV2IGFuZCB3ZWJwYWNrLWhvdCBtaWRkbGV3YXJlXG4gIGNvbnN0IHsgcHVibGljUGF0aCB9ID0gd2VicGFja0NvbmZpZy5vdXRwdXRcblxuICBhcHAudXNlKHdlYnBhY2tEZXZNaWRkbGV3YXJlKGNvbXBpbGVyLCBwdWJsaWNQYXRoKSlcbiAgYXBwLnVzZSh3ZWJwYWNrSE1STWlkZGxld2FyZShjb21waWxlcikpXG5cbiAgLy8gU2VydmUgc3RhdGljIGFzc2V0cyBmcm9tIH4vc3JjL3N0YXRpYyBzaW5jZSBXZWJwYWNrIGlzIHVuYXdhcmUgb2ZcbiAgLy8gdGhlc2UgZmlsZXMuIFRoaXMgbWlkZGxld2FyZSBkb2Vzbid0IG5lZWQgdG8gYmUgZW5hYmxlZCBvdXRzaWRlXG4gIC8vIG9mIGRldmVsb3BtZW50IHNpbmNlIHRoaXMgZGlyZWN0b3J5IHdpbGwgYmUgY29waWVkIGludG8gfi9kaXN0XG4gIC8vIHdoZW4gdGhlIGFwcGxpY2F0aW9uIGlzIGNvbXBpbGVkLlxuICBhcHAudXNlKHNlcnZlKHBhdGhzLmNsaWVudCgnc3RhdGljJykpKVxufSBlbHNlIHtcbiAgZGVidWcoXG4gICAgJ1NlcnZlciBpcyBiZWluZyBydW4gb3V0c2lkZSBvZiBsaXZlIGRldmVsb3BtZW50IG1vZGUsIG1lYW5pbmcgaXQgd2lsbCAnICtcbiAgICAnb25seSBzZXJ2ZSB0aGUgY29tcGlsZWQgYXBwbGljYXRpb24gYnVuZGxlIGluIH4vZGlzdC4gR2VuZXJhbGx5IHlvdSAnICtcbiAgICAnZG8gbm90IG5lZWQgYW4gYXBwbGljYXRpb24gc2VydmVyIGZvciB0aGlzIGFuZCBjYW4gaW5zdGVhZCB1c2UgYSB3ZWIgJyArXG4gICAgJ3NlcnZlciBzdWNoIGFzIG5naW54IHRvIHNlcnZlIHlvdXIgc3RhdGljIGZpbGVzLiBTZWUgdGhlIFwiZGVwbG95bWVudFwiICcgK1xuICAgICdzZWN0aW9uIGluIHRoZSBSRUFETUUgZm9yIG1vcmUgaW5mb3JtYXRpb24gb24gZGVwbG95bWVudCBzdHJhdGVnaWVzLidcbiAgKVxuXG4gIC8vIFNlcnZpbmcgfi9kaXN0IGJ5IGRlZmF1bHQuIElkZWFsbHkgdGhlc2UgZmlsZXMgc2hvdWxkIGJlIHNlcnZlZCBieVxuICAvLyB0aGUgd2ViIHNlcnZlciBhbmQgbm90IHRoZSBhcHAgc2VydmVyLCBidXQgdGhpcyBoZWxwcyB0byBkZW1vIHRoZVxuICAvLyBzZXJ2ZXIgaW4gcHJvZHVjdGlvbi5cbiAgYXBwLnVzZShzZXJ2ZShwYXRocy5kaXN0KCkpKVxufVxuXG5leHBvcnQgZGVmYXVsdCBhcHBcbiJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "main.js"
+      ],
+      "names": [],
+      "mappings": ";;;;;;AAAA;;;;AACA;;;;AACA;;;;AACA;;;;AACA;;;;AACA;;;;AACA;;;;AACA;;;;AACA;;;;AACA;;;;AACA;;;;;;AAEA,IAAM,QAAQ,qBAAO,YAAP,CAAd;AACA,IAAM,QAAQ,iBAAO,WAArB;AACA,IAAM,MAAM,mBAAZ;;AAEA;AACA,IAAI,iBAAO,KAAP,IAAgB,iBAAO,KAAP,CAAa,OAAjC,EAA0C;AACxC,MAAI,GAAJ,CAAQ,0BAAQ,wBAAM,iBAAO,KAAP,CAAa,OAAnB,CAAR,CAAR;AACD;;AAED;AACA;AACA;AACA,IAAI,GAAJ,CAAQ,0BAAQ,4CAAmB;AACjC,WAAS;AADwB,CAAnB,CAAR,CAAR;;AAIA;AACA;AACA;AACA,IAAI,iBAAO,GAAP,KAAe,aAAnB,EAAkC;AAChC,MAAM,WAAW,yCAAjB;;AAEA;AAHgC,MAIxB,UAJwB,GAIT,kBAAc,MAJL,CAIxB,UAJwB;;;AAMhC,MAAI,GAAJ,CAAQ,0BAAqB,QAArB,EAA+B,UAA/B,CAAR;AACA,MAAI,GAAJ,CAAQ,0BAAqB,QAArB,CAAR;;AAEA;AACA;AACA;AACA;AACA,MAAI,GAAJ,CAAQ,yBAAM,MAAM,MAAN,CAAa,QAAb,CAAN,CAAR;AACD,CAdD,MAcO;AACL,QACE,2EACA,sEADA,GAEA,uEAFA,GAGA,wEAHA,GAIA,sEALF;;AAQA;AACA;AACA;AACA,MAAI,GAAJ,CAAQ,yBAAM,MAAM,IAAN,EAAN,CAAR;AACD;;kBAEc,G",
+      "file": "main.js",
+      "sourcesContent": [
+        "import Koa from 'koa'\nimport convert from 'koa-convert'\nimport webpack from 'webpack'\nimport webpackConfig from '../build/webpack.config'\nimport historyApiFallback from 'koa-connect-history-api-fallback'\nimport serve from 'koa-static'\nimport proxy from 'koa-proxy'\nimport _debug from 'debug'\nimport config from '../config'\nimport webpackDevMiddleware from './middleware/webpack-dev'\nimport webpackHMRMiddleware from './middleware/webpack-hmr'\n\nconst debug = _debug('app:server')\nconst paths = config.utils_paths\nconst app = new Koa()\n\n// Enable koa-proxy if it has been enabled in the config.\nif (config.proxy && config.proxy.enabled) {\n  app.use(convert(proxy(config.proxy.options)))\n}\n\n// This rewrites all routes requests to the root /index.html file\n// (ignoring file requests). If you want to implement isomorphic\n// rendering, you'll want to remove this middleware.\napp.use(convert(historyApiFallback({\n  verbose: false\n})))\n\n// ------------------------------------\n// Apply Webpack HMR Middleware\n// ------------------------------------\nif (config.env === 'development') {\n  const compiler = webpack(webpackConfig)\n\n  // Enable webpack-dev and webpack-hot middleware\n  const { publicPath } = webpackConfig.output\n\n  app.use(webpackDevMiddleware(compiler, publicPath))\n  app.use(webpackHMRMiddleware(compiler))\n\n  // Serve static assets from ~/src/static since Webpack is unaware of\n  // these files. This middleware doesn't need to be enabled outside\n  // of development since this directory will be copied into ~/dist\n  // when the application is compiled.\n  app.use(serve(paths.client('static')))\n} else {\n  debug(\n    'Server is being run outside of live development mode, meaning it will ' +\n    'only serve the compiled application bundle in ~/dist. Generally you ' +\n    'do not need an application server for this and can instead use a web ' +\n    'server such as nginx to serve your static files. See the \"deployment\" ' +\n    'section in the README for more information on deployment strategies.'\n  )\n\n  // Serving ~/dist by default. Ideally these files should be served by\n  // the web server and not the app server, but this helps to demo the\n  // server in production.\n  app.use(serve(paths.dist()))\n}\n\nexport default app\n"
+      ]
+    },
+    "mtime": 1468487700459
+  },
+  "{\"filename\":\"/home/bob/mm/build/webpack.config.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false}:6.10.4": {
+    "metadata": {
+      "usedHelpers": [
+        "toArray",
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "webpack",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "webpack"
+              }
+            ]
+          },
+          {
+            "source": "cssnano",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "cssnano"
+              }
+            ]
+          },
+          {
+            "source": "html-webpack-plugin",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "HtmlWebpackPlugin"
+              }
+            ]
+          },
+          {
+            "source": "extract-text-webpack-plugin",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "ExtractTextPlugin"
+              }
+            ]
+          },
+          {
+            "source": "../config",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "config"
+              }
+            ]
+          },
+          {
+            "source": "debug",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "_debug"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/home/bob/mm/build/webpack.config.js",
+      "filenameRelative": "/home/bob/mm/build/webpack.config.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMap": "both",
+      "sourceMaps": "both",
+      "sourceMapTarget": "webpack.config.js",
+      "sourceFileName": "webpack.config.js",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "basename": "webpack.config"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _deleteProperty = require('babel-runtime/core-js/reflect/delete-property');\n\nvar _deleteProperty2 = _interopRequireDefault(_deleteProperty);\n\nvar _toArray2 = require('babel-runtime/helpers/toArray');\n\nvar _toArray3 = _interopRequireDefault(_toArray2);\n\nvar _webpack = require('webpack');\n\nvar _webpack2 = _interopRequireDefault(_webpack);\n\nvar _cssnano = require('cssnano');\n\nvar _cssnano2 = _interopRequireDefault(_cssnano);\n\nvar _htmlWebpackPlugin = require('html-webpack-plugin');\n\nvar _htmlWebpackPlugin2 = _interopRequireDefault(_htmlWebpackPlugin);\n\nvar _extractTextWebpackPlugin = require('extract-text-webpack-plugin');\n\nvar _extractTextWebpackPlugin2 = _interopRequireDefault(_extractTextWebpackPlugin);\n\nvar _config = require('../config');\n\nvar _config2 = _interopRequireDefault(_config);\n\nvar _debug2 = require('debug');\n\nvar _debug3 = _interopRequireDefault(_debug2);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar debug = (0, _debug3.default)('app:webpack:config');\nvar paths = _config2.default.utils_paths;\nvar _config$globals = _config2.default.globals;\nvar __DEV__ = _config$globals.__DEV__;\nvar __PROD__ = _config$globals.__PROD__;\nvar __TEST__ = _config$globals.__TEST__;\n\n\ndebug('Create configuration.');\nvar webpackConfig = {\n  name: 'client',\n  target: 'web',\n  devtool: _config2.default.compiler_devtool,\n  resolve: {\n    root: paths.client(),\n    extensions: ['', '.js', '.jsx', '.json']\n  },\n  module: {}\n};\n// ------------------------------------\n// Entry Points\n// ------------------------------------\nvar APP_ENTRY_PATHS = ['babel-polyfill', paths.client('main.js')];\n\nwebpackConfig.entry = {\n  app: __DEV__ ? APP_ENTRY_PATHS.concat('webpack-hot-middleware/client?path=' + _config2.default.compiler_public_path + '__webpack_hmr') : APP_ENTRY_PATHS,\n  vendor: _config2.default.compiler_vendor\n};\n\n// ------------------------------------\n// Bundle Output\n// ------------------------------------\nwebpackConfig.output = {\n  filename: '[name].[' + _config2.default.compiler_hash_type + '].js',\n  path: paths.dist(),\n  publicPath: _config2.default.compiler_public_path\n};\n\n// ------------------------------------\n// Plugins\n// ------------------------------------\nwebpackConfig.plugins = [new _webpack2.default.DefinePlugin(_config2.default.globals), new _htmlWebpackPlugin2.default({\n  template: paths.client('index.html'),\n  hash: false,\n  favicon: paths.client('static/favicon.ico'),\n  filename: 'index.html',\n  inject: 'body',\n  minify: {\n    collapseWhitespace: true\n  }\n})];\n\nif (__DEV__) {\n  debug('Enable plugins for live development (HMR, NoErrors).');\n  webpackConfig.plugins.push(new _webpack2.default.HotModuleReplacementPlugin(), new _webpack2.default.NoErrorsPlugin());\n} else if (__PROD__) {\n  debug('Enable plugins for production (OccurenceOrder, Dedupe & UglifyJS).');\n  webpackConfig.plugins.push(new _webpack2.default.optimize.OccurrenceOrderPlugin(), new _webpack2.default.optimize.DedupePlugin(), new _webpack2.default.optimize.UglifyJsPlugin({\n    compress: {\n      unused: true,\n      dead_code: true,\n      warnings: false\n    }\n  }));\n}\n\n// Don't split bundles during testing, since we only want import one bundle\nif (!__TEST__) {\n  webpackConfig.plugins.push(new _webpack2.default.optimize.CommonsChunkPlugin({\n    names: ['vendor']\n  }));\n}\n\n// ------------------------------------\n// Pre-Loaders\n// ------------------------------------\n/*\n[ NOTE ]\nWe no longer use eslint-loader due to it severely impacting build\ntimes for larger projects. `npm run lint` still exists to aid in\ndeploy processes (such as with CI), and it's recommended that you\nuse a linting plugin for your IDE in place of this loader.\n\nIf you do wish to continue using the loader, you can uncomment\nthe code below and run `npm i --save-dev eslint-loader`. This code\nwill be removed in a future release.\n\nwebpackConfig.module.preLoaders = [{\n  test: /\\.(js|jsx)$/,\n  loader: 'eslint',\n  exclude: /node_modules/\n}]\n\nwebpackConfig.eslint = {\n  configFile: paths.base('.eslintrc'),\n  emitWarning: __DEV__\n}\n*/\n\n// ------------------------------------\n// Loaders\n// ------------------------------------\n// JavaScript / JSON\nwebpackConfig.module.loaders = [{\n  test: /\\.(js|jsx)$/,\n  exclude: /node_modules/,\n  loader: 'babel',\n  query: {\n    cacheDirectory: true,\n    plugins: ['transform-runtime'],\n    presets: ['es2015', 'react', 'stage-0'],\n    env: {\n      production: {\n        presets: ['react-optimize']\n      }\n    }\n  }\n}, {\n  test: /\\.json$/,\n  loader: 'json'\n}];\n\n// ------------------------------------\n// Style Loaders\n// ------------------------------------\n// We use cssnano with the postcss loader, so we tell\n// css-loader not to duplicate minimization.\nvar BASE_CSS_LOADER = 'css?sourceMap&-minimize';\n\n// Add any packge names here whose styles need to be treated as CSS modules.\n// These paths will be combined into a single regex.\nvar PATHS_TO_TREAT_AS_CSS_MODULES = []\n// 'react-toolbox', (example)\n\n\n// If config has CSS modules enabled, treat this project's styles as CSS modules.\n;if (_config2.default.compiler_css_modules) {\n  PATHS_TO_TREAT_AS_CSS_MODULES.push(paths.client().replace(/[\\^\\$\\.\\*\\+\\-\\?\\=\\!\\:\\|\\\\\\/\\(\\)\\[\\]\\{\\}\\,]/g, '\\\\$&') // eslint-disable-line\n  );\n}\n\nvar isUsingCSSModules = !!PATHS_TO_TREAT_AS_CSS_MODULES.length;\nvar cssModulesRegex = new RegExp('(' + PATHS_TO_TREAT_AS_CSS_MODULES.join('|') + ')');\n\n// Loaders for styles that need to be treated as CSS modules.\nif (isUsingCSSModules) {\n  var cssModulesLoader = [BASE_CSS_LOADER, 'modules', 'importLoaders=1', 'localIdentName=[name]__[local]___[hash:base64:5]'].join('&');\n\n  webpackConfig.module.loaders.push({\n    test: /\\.scss$/,\n    include: cssModulesRegex,\n    loaders: ['style', cssModulesLoader, 'postcss', 'sass?sourceMap']\n  });\n\n  webpackConfig.module.loaders.push({\n    test: /\\.css$/,\n    include: cssModulesRegex,\n    loaders: ['style', cssModulesLoader, 'postcss']\n  });\n}\n\n// Loaders for files that should not be treated as CSS modules.\nvar excludeCSSModules = isUsingCSSModules ? cssModulesRegex : false;\nwebpackConfig.module.loaders.push({\n  test: /\\.scss$/,\n  exclude: excludeCSSModules,\n  loaders: ['style', BASE_CSS_LOADER, 'postcss', 'sass?sourceMap']\n});\nwebpackConfig.module.loaders.push({\n  test: /\\.css$/,\n  exclude: excludeCSSModules,\n  loaders: ['style', BASE_CSS_LOADER, 'postcss']\n});\n\n// ------------------------------------\n// Style Configuration\n// ------------------------------------\nwebpackConfig.sassLoader = {\n  includePaths: paths.client('styles')\n};\n\nwebpackConfig.postcss = [(0, _cssnano2.default)({\n  autoprefixer: {\n    add: true,\n    remove: true,\n    browsers: ['last 2 versions']\n  },\n  discardComments: {\n    removeAll: true\n  },\n  discardUnused: false,\n  mergeIdents: false,\n  reduceIdents: false,\n  safe: true,\n  sourcemap: true\n})];\n\n// File loaders\n/* eslint-disable */\nwebpackConfig.module.loaders.push({ test: /\\.woff(\\?.*)?$/, loader: 'url?prefix=fonts/&name=[path][name].[ext]&limit=10000&mimetype=application/font-woff' }, { test: /\\.woff2(\\?.*)?$/, loader: 'url?prefix=fonts/&name=[path][name].[ext]&limit=10000&mimetype=application/font-woff2' }, { test: /\\.otf(\\?.*)?$/, loader: 'file?prefix=fonts/&name=[path][name].[ext]&limit=10000&mimetype=font/opentype' }, { test: /\\.ttf(\\?.*)?$/, loader: 'url?prefix=fonts/&name=[path][name].[ext]&limit=10000&mimetype=application/octet-stream' }, { test: /\\.eot(\\?.*)?$/, loader: 'file?prefix=fonts/&name=[path][name].[ext]' }, { test: /\\.svg(\\?.*)?$/, loader: 'url?prefix=fonts/&name=[path][name].[ext]&limit=10000&mimetype=image/svg+xml' }, { test: /\\.(png|jpg)$/, loader: 'url?limit=8192' });\n/* eslint-enable */\n\n// ------------------------------------\n// Finalize Configuration\n// ------------------------------------\n// when we don't know the public path (we know it only when HMR is enabled [in development]) we\n// need to use the extractTextPlugin to fix this issue:\n// http://stackoverflow.com/questions/34133808/webpack-ots-parsing-error-loading-fonts/34133809#34133809\nif (!__DEV__) {\n  debug('Apply ExtractTextPlugin to CSS loaders.');\n  webpackConfig.module.loaders.filter(function (loader) {\n    return loader.loaders && loader.loaders.find(function (name) {\n      return (/css/.test(name.split('?')[0])\n      );\n    });\n  }).forEach(function (loader) {\n    var _loader$loaders = (0, _toArray3.default)(loader.loaders);\n\n    var first = _loader$loaders[0];\n\n    var rest = _loader$loaders.slice(1);\n\n    loader.loader = _extractTextWebpackPlugin2.default.extract(first, rest.join('!'));\n    (0, _deleteProperty2.default)(loader, 'loaders');\n  });\n\n  webpackConfig.plugins.push(new _extractTextWebpackPlugin2.default('[name].[contenthash].css', {\n    allChunks: true\n  }));\n}\n\nexports.default = webpackConfig;\n//# sourceMappingURL=data:application/json;base64,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QUUsTUFBTSxlQUFSLEVBQTJCLFFBQVEsOEVBQW5DLEVBTkYsRUFPRSxFQUFFLE1BQU0sY0FBUixFQUEyQixRQUFRLGdCQUFuQyxFQVBGO0FBU0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsSUFBSSxDQUFDLE9BQUwsRUFBYztBQUNaLFFBQU0seUNBQU47QUFDQSxnQkFBYyxNQUFkLENBQXFCLE9BQXJCLENBQTZCLE1BQTdCLENBQW9DLFVBQUMsTUFBRDtBQUFBLFdBQ2xDLE9BQU8sT0FBUCxJQUFrQixPQUFPLE9BQVAsQ0FBZSxJQUFmLENBQW9CLFVBQUMsSUFBRDtBQUFBLGFBQVUsT0FBTSxJQUFOLENBQVcsS0FBSyxLQUFMLENBQVcsR0FBWCxFQUFnQixDQUFoQixDQUFYO0FBQVY7QUFBQSxLQUFwQixDQURnQjtBQUFBLEdBQXBDLEVBRUUsT0FGRixDQUVVLFVBQUMsTUFBRCxFQUFZO0FBQUEsaURBQ0ssT0FBTyxPQURaOztBQUFBLFFBQ2IsS0FEYTs7QUFBQSxRQUNILElBREc7O0FBRXBCLFdBQU8sTUFBUCxHQUFnQixtQ0FBa0IsT0FBbEIsQ0FBMEIsS0FBMUIsRUFBaUMsS0FBSyxJQUFMLENBQVUsR0FBVixDQUFqQyxDQUFoQjtBQUNBLGtDQUF1QixNQUF2QixFQUErQixTQUEvQjtBQUNELEdBTkQ7O0FBUUEsZ0JBQWMsT0FBZCxDQUFzQixJQUF0QixDQUNFLHVDQUFzQiwwQkFBdEIsRUFBa0Q7QUFDaEQsZUFBVztBQURxQyxHQUFsRCxDQURGO0FBS0Q7O2tCQUVjLGEiLCJmaWxlIjoid2VicGFjay5jb25maWcuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgd2VicGFjayBmcm9tICd3ZWJwYWNrJ1xuaW1wb3J0IGNzc25hbm8gZnJvbSAnY3NzbmFubydcbmltcG9ydCBIdG1sV2VicGFja1BsdWdpbiBmcm9tICdodG1sLXdlYnBhY2stcGx1Z2luJ1xuaW1wb3J0IEV4dHJhY3RUZXh0UGx1Z2luIGZyb20gJ2V4dHJhY3QtdGV4dC13ZWJwYWNrLXBsdWdpbidcbmltcG9ydCBjb25maWcgZnJvbSAnLi4vY29uZmlnJ1xuaW1wb3J0IF9kZWJ1ZyBmcm9tICdkZWJ1ZydcblxuY29uc3QgZGVidWcgPSBfZGVidWcoJ2FwcDp3ZWJwYWNrOmNvbmZpZycpXG5jb25zdCBwYXRocyA9IGNvbmZpZy51dGlsc19wYXRoc1xuY29uc3Qge19fREVWX18sIF9fUFJPRF9fLCBfX1RFU1RfX30gPSBjb25maWcuZ2xvYmFsc1xuXG5kZWJ1ZygnQ3JlYXRlIGNvbmZpZ3VyYXRpb24uJylcbmNvbnN0IHdlYnBhY2tDb25maWcgPSB7XG4gIG5hbWU6ICdjbGllbnQnLFxuICB0YXJnZXQ6ICd3ZWInLFxuICBkZXZ0b29sOiBjb25maWcuY29tcGlsZXJfZGV2dG9vbCxcbiAgcmVzb2x2ZToge1xuICAgIHJvb3Q6IHBhdGhzLmNsaWVudCgpLFxuICAgIGV4dGVuc2lvbnM6IFsnJywgJy5qcycsICcuanN4JywgJy5qc29uJ11cbiAgfSxcbiAgbW9kdWxlOiB7fVxufVxuLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4vLyBFbnRyeSBQb2ludHNcbi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuY29uc3QgQVBQX0VOVFJZX1BBVEhTID0gW1xuICAnYmFiZWwtcG9seWZpbGwnLFxuICBwYXRocy5jbGllbnQoJ21haW4uanMnKVxuXVxuXG53ZWJwYWNrQ29uZmlnLmVudHJ5ID0ge1xuICBhcHA6IF9fREVWX19cbiAgICA/IEFQUF9FTlRSWV9QQVRIUy5jb25jYXQoYHdlYnBhY2staG90LW1pZGRsZXdhcmUvY2xpZW50P3BhdGg9JHtjb25maWcuY29tcGlsZXJfcHVibGljX3BhdGh9X193ZWJwYWNrX2htcmApXG4gICAgOiBBUFBfRU5UUllfUEFUSFMsXG4gIHZlbmRvcjogY29uZmlnLmNvbXBpbGVyX3ZlbmRvclxufVxuXG4vLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbi8vIEJ1bmRsZSBPdXRwdXRcbi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxud2VicGFja0NvbmZpZy5vdXRwdXQgPSB7XG4gIGZpbGVuYW1lOiBgW25hbWVdLlske2NvbmZpZy5jb21waWxlcl9oYXNoX3R5cGV9XS5qc2AsXG4gIHBhdGg6IHBhdGhzLmRpc3QoKSxcbiAgcHVibGljUGF0aDogY29uZmlnLmNvbXBpbGVyX3B1YmxpY19wYXRoXG59XG5cbi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuLy8gUGx1Z2luc1xuLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG53ZWJwYWNrQ29uZmlnLnBsdWdpbnMgPSBbXG4gIG5ldyB3ZWJwYWNrLkRlZmluZVBsdWdpbihjb25maWcuZ2xvYmFscyksXG4gIG5ldyBIdG1sV2VicGFja1BsdWdpbih7XG4gICAgdGVtcGxhdGU6IHBhdGhzLmNsaWVudCgnaW5kZXguaHRtbCcpLFxuICAgIGhhc2g6IGZhbHNlLFxuICAgIGZhdmljb246IHBhdGhzLmNsaWVudCgnc3RhdGljL2Zhdmljb24uaWNvJyksXG4gICAgZmlsZW5hbWU6ICdpbmRleC5odG1sJyxcbiAgICBpbmplY3Q6ICdib2R5JyxcbiAgICBtaW5pZnk6IHtcbiAgICAgIGNvbGxhcHNlV2hpdGVzcGFjZTogdHJ1ZVxuICAgIH1cbiAgfSlcbl1cblxuaWYgKF9fREVWX18pIHtcbiAgZGVidWcoJ0VuYWJsZSBwbHVnaW5zIGZvciBsaXZlIGRldmVsb3BtZW50IChITVIsIE5vRXJyb3JzKS4nKVxuICB3ZWJwYWNrQ29uZmlnLnBsdWdpbnMucHVzaChcbiAgICBuZXcgd2VicGFjay5Ib3RNb2R1bGVSZXBsYWNlbWVudFBsdWdpbigpLFxuICAgIG5ldyB3ZWJwYWNrLk5vRXJyb3JzUGx1Z2luKClcbiAgKVxufSBlbHNlIGlmIChfX1BST0RfXykge1xuICBkZWJ1ZygnRW5hYmxlIHBsdWdpbnMgZm9yIHByb2R1Y3Rpb24gKE9jY3VyZW5jZU9yZGVyLCBEZWR1cGUgJiBVZ2xpZnlKUykuJylcbiAgd2VicGFja0NvbmZpZy5wbHVnaW5zLnB1c2goXG4gICAgbmV3IHdlYnBhY2sub3B0aW1pemUuT2NjdXJyZW5jZU9yZGVyUGx1Z2luKCksXG4gICAgbmV3IHdlYnBhY2sub3B0aW1pemUuRGVkdXBlUGx1Z2luKCksXG4gICAgbmV3IHdlYnBhY2sub3B0aW1pemUuVWdsaWZ5SnNQbHVnaW4oe1xuICAgICAgY29tcHJlc3M6IHtcbiAgICAgICAgdW51c2VkOiB0cnVlLFxuICAgICAgICBkZWFkX2NvZGU6IHRydWUsXG4gICAgICAgIHdhcm5pbmdzOiBmYWxzZVxuICAgICAgfVxuICAgIH0pXG4gIClcbn1cblxuLy8gRG9uJ3Qgc3BsaXQgYnVuZGxlcyBkdXJpbmcgdGVzdGluZywgc2luY2Ugd2Ugb25seSB3YW50IGltcG9ydCBvbmUgYnVuZGxlXG5pZiAoIV9fVEVTVF9fKSB7XG4gIHdlYnBhY2tDb25maWcucGx1Z2lucy5wdXNoKFxuICAgIG5ldyB3ZWJwYWNrLm9wdGltaXplLkNvbW1vbnNDaHVua1BsdWdpbih7XG4gICAgICBuYW1lczogWyd2ZW5kb3InXVxuICAgIH0pXG4gIClcbn1cblxuLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4vLyBQcmUtTG9hZGVyc1xuLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4vKlxuWyBOT1RFIF1cbldlIG5vIGxvbmdlciB1c2UgZXNsaW50LWxvYWRlciBkdWUgdG8gaXQgc2V2ZXJlbHkgaW1wYWN0aW5nIGJ1aWxkXG50aW1lcyBmb3IgbGFyZ2VyIHByb2plY3RzLiBgbnBtIHJ1biBsaW50YCBzdGlsbCBleGlzdHMgdG8gYWlkIGluXG5kZXBsb3kgcHJvY2Vzc2VzIChzdWNoIGFzIHdpdGggQ0kpLCBhbmQgaXQncyByZWNvbW1lbmRlZCB0aGF0IHlvdVxudXNlIGEgbGludGluZyBwbHVnaW4gZm9yIHlvdXIgSURFIGluIHBsYWNlIG9mIHRoaXMgbG9hZGVyLlxuXG5JZiB5b3UgZG8gd2lzaCB0byBjb250aW51ZSB1c2luZyB0aGUgbG9hZGVyLCB5b3UgY2FuIHVuY29tbWVudFxudGhlIGNvZGUgYmVsb3cgYW5kIHJ1biBgbnBtIGkgLS1zYXZlLWRldiBlc2xpbnQtbG9hZGVyYC4gVGhpcyBjb2RlXG53aWxsIGJlIHJlbW92ZWQgaW4gYSBmdXR1cmUgcmVsZWFzZS5cblxud2VicGFja0NvbmZpZy5tb2R1bGUucHJlTG9hZGVycyA9IFt7XG4gIHRlc3Q6IC9cXC4oanN8anN4KSQvLFxuICBsb2FkZXI6ICdlc2xpbnQnLFxuICBleGNsdWRlOiAvbm9kZV9tb2R1bGVzL1xufV1cblxud2VicGFja0NvbmZpZy5lc2xpbnQgPSB7XG4gIGNvbmZpZ0ZpbGU6IHBhdGhzLmJhc2UoJy5lc2xpbnRyYycpLFxuICBlbWl0V2FybmluZzogX19ERVZfX1xufVxuKi9cblxuLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4vLyBMb2FkZXJzXG4vLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbi8vIEphdmFTY3JpcHQgLyBKU09OXG53ZWJwYWNrQ29uZmlnLm1vZHVsZS5sb2FkZXJzID0gW3tcbiAgdGVzdDogL1xcLihqc3xqc3gpJC8sXG4gIGV4Y2x1ZGU6IC9ub2RlX21vZHVsZXMvLFxuICBsb2FkZXI6ICdiYWJlbCcsXG4gIHF1ZXJ5OiB7XG4gICAgY2FjaGVEaXJlY3Rvcnk6IHRydWUsXG4gICAgcGx1Z2luczogWyd0cmFuc2Zvcm0tcnVudGltZSddLFxuICAgIHByZXNldHM6IFsnZXMyMDE1JywgJ3JlYWN0JywgJ3N0YWdlLTAnXSxcbiAgICBlbnY6IHtcbiAgICAgIHByb2R1Y3Rpb246IHtcbiAgICAgICAgcHJlc2V0czogWydyZWFjdC1vcHRpbWl6ZSddXG4gICAgICB9XG4gICAgfVxuICB9XG59LFxue1xuICB0ZXN0OiAvXFwuanNvbiQvLFxuICBsb2FkZXI6ICdqc29uJ1xufV1cblxuLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4vLyBTdHlsZSBMb2FkZXJzXG4vLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbi8vIFdlIHVzZSBjc3NuYW5vIHdpdGggdGhlIHBvc3Rjc3MgbG9hZGVyLCBzbyB3ZSB0ZWxsXG4vLyBjc3MtbG9hZGVyIG5vdCB0byBkdXBsaWNhdGUgbWluaW1pemF0aW9uLlxuY29uc3QgQkFTRV9DU1NfTE9BREVSID0gJ2Nzcz9zb3VyY2VNYXAmLW1pbmltaXplJ1xuXG4vLyBBZGQgYW55IHBhY2tnZSBuYW1lcyBoZXJlIHdob3NlIHN0eWxlcyBuZWVkIHRvIGJlIHRyZWF0ZWQgYXMgQ1NTIG1vZHVsZXMuXG4vLyBUaGVzZSBwYXRocyB3aWxsIGJlIGNvbWJpbmVkIGludG8gYSBzaW5nbGUgcmVnZXguXG5jb25zdCBQQVRIU19UT19UUkVBVF9BU19DU1NfTU9EVUxFUyA9IFtcbiAgLy8gJ3JlYWN0LXRvb2xib3gnLCAoZXhhbXBsZSlcbl1cblxuLy8gSWYgY29uZmlnIGhhcyBDU1MgbW9kdWxlcyBlbmFibGVkLCB0cmVhdCB0aGlzIHByb2plY3QncyBzdHlsZXMgYXMgQ1NTIG1vZHVsZXMuXG5pZiAoY29uZmlnLmNvbXBpbGVyX2Nzc19tb2R1bGVzKSB7XG4gIFBBVEhTX1RPX1RSRUFUX0FTX0NTU19NT0RVTEVTLnB1c2goXG4gICAgcGF0aHMuY2xpZW50KCkucmVwbGFjZSgvW1xcXlxcJFxcLlxcKlxcK1xcLVxcP1xcPVxcIVxcOlxcfFxcXFxcXC9cXChcXClcXFtcXF1cXHtcXH1cXCxdL2csICdcXFxcJCYnKSAvLyBlc2xpbnQtZGlzYWJsZS1saW5lXG4gIClcbn1cblxuY29uc3QgaXNVc2luZ0NTU01vZHVsZXMgPSAhIVBBVEhTX1RPX1RSRUFUX0FTX0NTU19NT0RVTEVTLmxlbmd0aFxuY29uc3QgY3NzTW9kdWxlc1JlZ2V4ID0gbmV3IFJlZ0V4cChgKCR7UEFUSFNfVE9fVFJFQVRfQVNfQ1NTX01PRFVMRVMuam9pbignfCcpfSlgKVxuXG4vLyBMb2FkZXJzIGZvciBzdHlsZXMgdGhhdCBuZWVkIHRvIGJlIHRyZWF0ZWQgYXMgQ1NTIG1vZHVsZXMuXG5pZiAoaXNVc2luZ0NTU01vZHVsZXMpIHtcbiAgY29uc3QgY3NzTW9kdWxlc0xvYWRlciA9IFtcbiAgICBCQVNFX0NTU19MT0FERVIsXG4gICAgJ21vZHVsZXMnLFxuICAgICdpbXBvcnRMb2FkZXJzPTEnLFxuICAgICdsb2NhbElkZW50TmFtZT1bbmFtZV1fX1tsb2NhbF1fX19baGFzaDpiYXNlNjQ6NV0nXG4gIF0uam9pbignJicpXG5cbiAgd2VicGFja0NvbmZpZy5tb2R1bGUubG9hZGVycy5wdXNoKHtcbiAgICB0ZXN0OiAvXFwuc2NzcyQvLFxuICAgIGluY2x1ZGU6IGNzc01vZHVsZXNSZWdleCxcbiAgICBsb2FkZXJzOiBbXG4gICAgICAnc3R5bGUnLFxuICAgICAgY3NzTW9kdWxlc0xvYWRlcixcbiAgICAgICdwb3N0Y3NzJyxcbiAgICAgICdzYXNzP3NvdXJjZU1hcCdcbiAgICBdXG4gIH0pXG5cbiAgd2VicGFja0NvbmZpZy5tb2R1bGUubG9hZGVycy5wdXNoKHtcbiAgICB0ZXN0OiAvXFwuY3NzJC8sXG4gICAgaW5jbHVkZTogY3NzTW9kdWxlc1JlZ2V4LFxuICAgIGxvYWRlcnM6IFtcbiAgICAgICdzdHlsZScsXG4gICAgICBjc3NNb2R1bGVzTG9hZGVyLFxuICAgICAgJ3Bvc3Rjc3MnXG4gICAgXVxuICB9KVxufVxuXG4vLyBMb2FkZXJzIGZvciBmaWxlcyB0aGF0IHNob3VsZCBub3QgYmUgdHJlYXRlZCBhcyBDU1MgbW9kdWxlcy5cbmNvbnN0IGV4Y2x1ZGVDU1NNb2R1bGVzID0gaXNVc2luZ0NTU01vZHVsZXMgPyBjc3NNb2R1bGVzUmVnZXggOiBmYWxzZVxud2VicGFja0NvbmZpZy5tb2R1bGUubG9hZGVycy5wdXNoKHtcbiAgdGVzdDogL1xcLnNjc3MkLyxcbiAgZXhjbHVkZTogZXhjbHVkZUNTU01vZHVsZXMsXG4gIGxvYWRlcnM6IFtcbiAgICAnc3R5bGUnLFxuICAgIEJBU0VfQ1NTX0xPQURFUixcbiAgICAncG9zdGNzcycsXG4gICAgJ3Nhc3M/c291cmNlTWFwJ1xuICBdXG59KVxud2VicGFja0NvbmZpZy5tb2R1bGUubG9hZGVycy5wdXNoKHtcbiAgdGVzdDogL1xcLmNzcyQvLFxuICBleGNsdWRlOiBleGNsdWRlQ1NTTW9kdWxlcyxcbiAgbG9hZGVyczogW1xuICAgICdzdHlsZScsXG4gICAgQkFTRV9DU1NfTE9BREVSLFxuICAgICdwb3N0Y3NzJ1xuICBdXG59KVxuXG4vLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbi8vIFN0eWxlIENvbmZpZ3VyYXRpb25cbi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxud2VicGFja0NvbmZpZy5zYXNzTG9hZGVyID0ge1xuICBpbmNsdWRlUGF0aHM6IHBhdGhzLmNsaWVudCgnc3R5bGVzJylcbn1cblxud2VicGFja0NvbmZpZy5wb3N0Y3NzID0gW1xuICBjc3NuYW5vKHtcbiAgICBhdXRvcHJlZml4ZXI6IHtcbiAgICAgIGFkZDogdHJ1ZSxcbiAgICAgIHJlbW92ZTogdHJ1ZSxcbiAgICAgIGJyb3dzZXJzOiBbJ2xhc3QgMiB2ZXJzaW9ucyddXG4gICAgfSxcbiAgICBkaXNjYXJkQ29tbWVudHM6IHtcbiAgICAgIHJlbW92ZUFsbDogdHJ1ZVxuICAgIH0sXG4gICAgZGlzY2FyZFVudXNlZDogZmFsc2UsXG4gICAgbWVyZ2VJZGVudHM6IGZhbHNlLFxuICAgIHJlZHVjZUlkZW50czogZmFsc2UsXG4gICAgc2FmZTogdHJ1ZSxcbiAgICBzb3VyY2VtYXA6IHRydWVcbiAgfSlcbl1cblxuLy8gRmlsZSBsb2FkZXJzXG4vKiBlc2xpbnQtZGlzYWJsZSAqL1xud2VicGFja0NvbmZpZy5tb2R1bGUubG9hZGVycy5wdXNoKFxuICB7IHRlc3Q6IC9cXC53b2ZmKFxcPy4qKT8kLywgIGxvYWRlcjogJ3VybD9wcmVmaXg9Zm9udHMvJm5hbWU9W3BhdGhdW25hbWVdLltleHRdJmxpbWl0PTEwMDAwJm1pbWV0eXBlPWFwcGxpY2F0aW9uL2ZvbnQtd29mZicgfSxcbiAgeyB0ZXN0OiAvXFwud29mZjIoXFw/LiopPyQvLCBsb2FkZXI6ICd1cmw/cHJlZml4PWZvbnRzLyZuYW1lPVtwYXRoXVtuYW1lXS5bZXh0XSZsaW1pdD0xMDAwMCZtaW1ldHlwZT1hcHBsaWNhdGlvbi9mb250LXdvZmYyJyB9LFxuICB7IHRlc3Q6IC9cXC5vdGYoXFw/LiopPyQvLCAgIGxvYWRlcjogJ2ZpbGU/cHJlZml4PWZvbnRzLyZuYW1lPVtwYXRoXVtuYW1lXS5bZXh0XSZsaW1pdD0xMDAwMCZtaW1ldHlwZT1mb250L29wZW50eXBlJyB9LFxuICB7IHRlc3Q6IC9cXC50dGYoXFw/LiopPyQvLCAgIGxvYWRlcjogJ3VybD9wcmVmaXg9Zm9udHMvJm5hbWU9W3BhdGhdW25hbWVdLltleHRdJmxpbWl0PTEwMDAwJm1pbWV0eXBlPWFwcGxpY2F0aW9uL29jdGV0LXN0cmVhbScgfSxcbiAgeyB0ZXN0OiAvXFwuZW90KFxcPy4qKT8kLywgICBsb2FkZXI6ICdmaWxlP3ByZWZpeD1mb250cy8mbmFtZT1bcGF0aF1bbmFtZV0uW2V4dF0nIH0sXG4gIHsgdGVzdDogL1xcLnN2ZyhcXD8uKik/JC8sICAgbG9hZGVyOiAndXJsP3ByZWZpeD1mb250cy8mbmFtZT1bcGF0aF1bbmFtZV0uW2V4dF0mbGltaXQ9MTAwMDAmbWltZXR5cGU9aW1hZ2Uvc3ZnK3htbCcgfSxcbiAgeyB0ZXN0OiAvXFwuKHBuZ3xqcGcpJC8sICAgIGxvYWRlcjogJ3VybD9saW1pdD04MTkyJyB9XG4pXG4vKiBlc2xpbnQtZW5hYmxlICovXG5cbi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuLy8gRmluYWxpemUgQ29uZmlndXJhdGlvblxuLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4vLyB3aGVuIHdlIGRvbid0IGtub3cgdGhlIHB1YmxpYyBwYXRoICh3ZSBrbm93IGl0IG9ubHkgd2hlbiBITVIgaXMgZW5hYmxlZCBbaW4gZGV2ZWxvcG1lbnRdKSB3ZVxuLy8gbmVlZCB0byB1c2UgdGhlIGV4dHJhY3RUZXh0UGx1Z2luIHRvIGZpeCB0aGlzIGlzc3VlOlxuLy8gaHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL3F1ZXN0aW9ucy8zNDEzMzgwOC93ZWJwYWNrLW90cy1wYXJzaW5nLWVycm9yLWxvYWRpbmctZm9udHMvMzQxMzM4MDkjMzQxMzM4MDlcbmlmICghX19ERVZfXykge1xuICBkZWJ1ZygnQXBwbHkgRXh0cmFjdFRleHRQbHVnaW4gdG8gQ1NTIGxvYWRlcnMuJylcbiAgd2VicGFja0NvbmZpZy5tb2R1bGUubG9hZGVycy5maWx0ZXIoKGxvYWRlcikgPT5cbiAgICBsb2FkZXIubG9hZGVycyAmJiBsb2FkZXIubG9hZGVycy5maW5kKChuYW1lKSA9PiAvY3NzLy50ZXN0KG5hbWUuc3BsaXQoJz8nKVswXSkpXG4gICkuZm9yRWFjaCgobG9hZGVyKSA9PiB7XG4gICAgY29uc3QgW2ZpcnN0LCAuLi5yZXN0XSA9IGxvYWRlci5sb2FkZXJzXG4gICAgbG9hZGVyLmxvYWRlciA9IEV4dHJhY3RUZXh0UGx1Z2luLmV4dHJhY3QoZmlyc3QsIHJlc3Quam9pbignIScpKVxuICAgIFJlZmxlY3QuZGVsZXRlUHJvcGVydHkobG9hZGVyLCAnbG9hZGVycycpXG4gIH0pXG5cbiAgd2VicGFja0NvbmZpZy5wbHVnaW5zLnB1c2goXG4gICAgbmV3IEV4dHJhY3RUZXh0UGx1Z2luKCdbbmFtZV0uW2NvbnRlbnRoYXNoXS5jc3MnLCB7XG4gICAgICBhbGxDaHVua3M6IHRydWVcbiAgICB9KVxuICApXG59XG5cbmV4cG9ydCBkZWZhdWx0IHdlYnBhY2tDb25maWdcbiJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "webpack.config.js"
+      ],
+      "names": [],
+      "mappings": "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",
+      "file": "webpack.config.js",
+      "sourcesContent": [
+        "import webpack from 'webpack'\nimport cssnano from 'cssnano'\nimport HtmlWebpackPlugin from 'html-webpack-plugin'\nimport ExtractTextPlugin from 'extract-text-webpack-plugin'\nimport config from '../config'\nimport _debug from 'debug'\n\nconst debug = _debug('app:webpack:config')\nconst paths = config.utils_paths\nconst {__DEV__, __PROD__, __TEST__} = config.globals\n\ndebug('Create configuration.')\nconst webpackConfig = {\n  name: 'client',\n  target: 'web',\n  devtool: config.compiler_devtool,\n  resolve: {\n    root: paths.client(),\n    extensions: ['', '.js', '.jsx', '.json']\n  },\n  module: {}\n}\n// ------------------------------------\n// Entry Points\n// ------------------------------------\nconst APP_ENTRY_PATHS = [\n  'babel-polyfill',\n  paths.client('main.js')\n]\n\nwebpackConfig.entry = {\n  app: __DEV__\n    ? APP_ENTRY_PATHS.concat(`webpack-hot-middleware/client?path=${config.compiler_public_path}__webpack_hmr`)\n    : APP_ENTRY_PATHS,\n  vendor: config.compiler_vendor\n}\n\n// ------------------------------------\n// Bundle Output\n// ------------------------------------\nwebpackConfig.output = {\n  filename: `[name].[${config.compiler_hash_type}].js`,\n  path: paths.dist(),\n  publicPath: config.compiler_public_path\n}\n\n// ------------------------------------\n// Plugins\n// ------------------------------------\nwebpackConfig.plugins = [\n  new webpack.DefinePlugin(config.globals),\n  new HtmlWebpackPlugin({\n    template: paths.client('index.html'),\n    hash: false,\n    favicon: paths.client('static/favicon.ico'),\n    filename: 'index.html',\n    inject: 'body',\n    minify: {\n      collapseWhitespace: true\n    }\n  })\n]\n\nif (__DEV__) {\n  debug('Enable plugins for live development (HMR, NoErrors).')\n  webpackConfig.plugins.push(\n    new webpack.HotModuleReplacementPlugin(),\n    new webpack.NoErrorsPlugin()\n  )\n} else if (__PROD__) {\n  debug('Enable plugins for production (OccurenceOrder, Dedupe & UglifyJS).')\n  webpackConfig.plugins.push(\n    new webpack.optimize.OccurrenceOrderPlugin(),\n    new webpack.optimize.DedupePlugin(),\n    new webpack.optimize.UglifyJsPlugin({\n      compress: {\n        unused: true,\n        dead_code: true,\n        warnings: false\n      }\n    })\n  )\n}\n\n// Don't split bundles during testing, since we only want import one bundle\nif (!__TEST__) {\n  webpackConfig.plugins.push(\n    new webpack.optimize.CommonsChunkPlugin({\n      names: ['vendor']\n    })\n  )\n}\n\n// ------------------------------------\n// Pre-Loaders\n// ------------------------------------\n/*\n[ NOTE ]\nWe no longer use eslint-loader due to it severely impacting build\ntimes for larger projects. `npm run lint` still exists to aid in\ndeploy processes (such as with CI), and it's recommended that you\nuse a linting plugin for your IDE in place of this loader.\n\nIf you do wish to continue using the loader, you can uncomment\nthe code below and run `npm i --save-dev eslint-loader`. This code\nwill be removed in a future release.\n\nwebpackConfig.module.preLoaders = [{\n  test: /\\.(js|jsx)$/,\n  loader: 'eslint',\n  exclude: /node_modules/\n}]\n\nwebpackConfig.eslint = {\n  configFile: paths.base('.eslintrc'),\n  emitWarning: __DEV__\n}\n*/\n\n// ------------------------------------\n// Loaders\n// ------------------------------------\n// JavaScript / JSON\nwebpackConfig.module.loaders = [{\n  test: /\\.(js|jsx)$/,\n  exclude: /node_modules/,\n  loader: 'babel',\n  query: {\n    cacheDirectory: true,\n    plugins: ['transform-runtime'],\n    presets: ['es2015', 'react', 'stage-0'],\n    env: {\n      production: {\n        presets: ['react-optimize']\n      }\n    }\n  }\n},\n{\n  test: /\\.json$/,\n  loader: 'json'\n}]\n\n// ------------------------------------\n// Style Loaders\n// ------------------------------------\n// We use cssnano with the postcss loader, so we tell\n// css-loader not to duplicate minimization.\nconst BASE_CSS_LOADER = 'css?sourceMap&-minimize'\n\n// Add any packge names here whose styles need to be treated as CSS modules.\n// These paths will be combined into a single regex.\nconst PATHS_TO_TREAT_AS_CSS_MODULES = [\n  // 'react-toolbox', (example)\n]\n\n// If config has CSS modules enabled, treat this project's styles as CSS modules.\nif (config.compiler_css_modules) {\n  PATHS_TO_TREAT_AS_CSS_MODULES.push(\n    paths.client().replace(/[\\^\\$\\.\\*\\+\\-\\?\\=\\!\\:\\|\\\\\\/\\(\\)\\[\\]\\{\\}\\,]/g, '\\\\$&') // eslint-disable-line\n  )\n}\n\nconst isUsingCSSModules = !!PATHS_TO_TREAT_AS_CSS_MODULES.length\nconst cssModulesRegex = new RegExp(`(${PATHS_TO_TREAT_AS_CSS_MODULES.join('|')})`)\n\n// Loaders for styles that need to be treated as CSS modules.\nif (isUsingCSSModules) {\n  const cssModulesLoader = [\n    BASE_CSS_LOADER,\n    'modules',\n    'importLoaders=1',\n    'localIdentName=[name]__[local]___[hash:base64:5]'\n  ].join('&')\n\n  webpackConfig.module.loaders.push({\n    test: /\\.scss$/,\n    include: cssModulesRegex,\n    loaders: [\n      'style',\n      cssModulesLoader,\n      'postcss',\n      'sass?sourceMap'\n    ]\n  })\n\n  webpackConfig.module.loaders.push({\n    test: /\\.css$/,\n    include: cssModulesRegex,\n    loaders: [\n      'style',\n      cssModulesLoader,\n      'postcss'\n    ]\n  })\n}\n\n// Loaders for files that should not be treated as CSS modules.\nconst excludeCSSModules = isUsingCSSModules ? cssModulesRegex : false\nwebpackConfig.module.loaders.push({\n  test: /\\.scss$/,\n  exclude: excludeCSSModules,\n  loaders: [\n    'style',\n    BASE_CSS_LOADER,\n    'postcss',\n    'sass?sourceMap'\n  ]\n})\nwebpackConfig.module.loaders.push({\n  test: /\\.css$/,\n  exclude: excludeCSSModules,\n  loaders: [\n    'style',\n    BASE_CSS_LOADER,\n    'postcss'\n  ]\n})\n\n// ------------------------------------\n// Style Configuration\n// ------------------------------------\nwebpackConfig.sassLoader = {\n  includePaths: paths.client('styles')\n}\n\nwebpackConfig.postcss = [\n  cssnano({\n    autoprefixer: {\n      add: true,\n      remove: true,\n      browsers: ['last 2 versions']\n    },\n    discardComments: {\n      removeAll: true\n    },\n    discardUnused: false,\n    mergeIdents: false,\n    reduceIdents: false,\n    safe: true,\n    sourcemap: true\n  })\n]\n\n// File loaders\n/* eslint-disable */\nwebpackConfig.module.loaders.push(\n  { test: /\\.woff(\\?.*)?$/,  loader: 'url?prefix=fonts/&name=[path][name].[ext]&limit=10000&mimetype=application/font-woff' },\n  { test: /\\.woff2(\\?.*)?$/, loader: 'url?prefix=fonts/&name=[path][name].[ext]&limit=10000&mimetype=application/font-woff2' },\n  { test: /\\.otf(\\?.*)?$/,   loader: 'file?prefix=fonts/&name=[path][name].[ext]&limit=10000&mimetype=font/opentype' },\n  { test: /\\.ttf(\\?.*)?$/,   loader: 'url?prefix=fonts/&name=[path][name].[ext]&limit=10000&mimetype=application/octet-stream' },\n  { test: /\\.eot(\\?.*)?$/,   loader: 'file?prefix=fonts/&name=[path][name].[ext]' },\n  { test: /\\.svg(\\?.*)?$/,   loader: 'url?prefix=fonts/&name=[path][name].[ext]&limit=10000&mimetype=image/svg+xml' },\n  { test: /\\.(png|jpg)$/,    loader: 'url?limit=8192' }\n)\n/* eslint-enable */\n\n// ------------------------------------\n// Finalize Configuration\n// ------------------------------------\n// when we don't know the public path (we know it only when HMR is enabled [in development]) we\n// need to use the extractTextPlugin to fix this issue:\n// http://stackoverflow.com/questions/34133808/webpack-ots-parsing-error-loading-fonts/34133809#34133809\nif (!__DEV__) {\n  debug('Apply ExtractTextPlugin to CSS loaders.')\n  webpackConfig.module.loaders.filter((loader) =>\n    loader.loaders && loader.loaders.find((name) => /css/.test(name.split('?')[0]))\n  ).forEach((loader) => {\n    const [first, ...rest] = loader.loaders\n    loader.loader = ExtractTextPlugin.extract(first, rest.join('!'))\n    Reflect.deleteProperty(loader, 'loaders')\n  })\n\n  webpackConfig.plugins.push(\n    new ExtractTextPlugin('[name].[contenthash].css', {\n      allChunks: true\n    })\n  )\n}\n\nexport default webpackConfig\n"
+      ]
+    },
+    "mtime": 1468487700459
+  },
+  "{\"filename\":\"/home/bob/mm/server/middleware/webpack-dev.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false}:6.10.4": {
+    "metadata": {
+      "usedHelpers": [
+        "asyncToGenerator",
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "webpack-dev-middleware",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "WebpackDevMiddleware"
+              }
+            ]
+          },
+          {
+            "source": "../lib/apply-express-middleware",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "applyExpressMiddleware"
+              }
+            ]
+          },
+          {
+            "source": "debug",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "_debug"
+              }
+            ]
+          },
+          {
+            "source": "../../config",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "config"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [
+            "compiler",
+            "publicPath"
+          ],
+          "specifiers": [
+            {
+              "kind": "local",
+              "local": "compiler",
+              "exported": "default"
+            },
+            {
+              "kind": "local",
+              "local": "publicPath",
+              "exported": "default"
+            }
+          ]
+        }
+      }
+    },
+    "options": {
+      "filename": "/home/bob/mm/server/middleware/webpack-dev.js",
+      "filenameRelative": "/home/bob/mm/server/middleware/webpack-dev.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMap": "both",
+      "sourceMaps": "both",
+      "sourceMapTarget": "webpack-dev.js",
+      "sourceFileName": "webpack-dev.js",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "basename": "webpack-dev"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _regenerator = require('babel-runtime/regenerator');\n\nvar _regenerator2 = _interopRequireDefault(_regenerator);\n\nvar _asyncToGenerator2 = require('babel-runtime/helpers/asyncToGenerator');\n\nvar _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);\n\nexports.default = function (compiler, publicPath) {\n  debug('Enable webpack dev middleware.');\n\n  var middleware = (0, _webpackDevMiddleware2.default)(compiler, {\n    publicPath: publicPath,\n    contentBase: paths.client(),\n    hot: true,\n    quiet: _config2.default.compiler_quiet,\n    noInfo: _config2.default.compiler_quiet,\n    lazy: false,\n    stats: _config2.default.compiler_stats\n  });\n\n  return function () {\n    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(ctx, next) {\n      var hasNext;\n      return _regenerator2.default.wrap(function _callee$(_context) {\n        while (1) {\n          switch (_context.prev = _context.next) {\n            case 0:\n              _context.next = 2;\n              return (0, _applyExpressMiddleware2.default)(middleware, ctx.req, {\n                end: function end(content) {\n                  return ctx.body = content;\n                },\n                setHeader: function setHeader() {\n                  ctx.set.apply(ctx, arguments);\n                }\n              });\n\n            case 2:\n              hasNext = _context.sent;\n\n              if (!hasNext) {\n                _context.next = 6;\n                break;\n              }\n\n              _context.next = 6;\n              return next();\n\n            case 6:\n            case 'end':\n              return _context.stop();\n          }\n        }\n      }, _callee, this);\n    }));\n\n    function koaWebpackDevMiddleware(_x, _x2) {\n      return _ref.apply(this, arguments);\n    }\n\n    return koaWebpackDevMiddleware;\n  }();\n};\n\nvar _webpackDevMiddleware = require('webpack-dev-middleware');\n\nvar _webpackDevMiddleware2 = _interopRequireDefault(_webpackDevMiddleware);\n\nvar _applyExpressMiddleware = require('../lib/apply-express-middleware');\n\nvar _applyExpressMiddleware2 = _interopRequireDefault(_applyExpressMiddleware);\n\nvar _debug2 = require('debug');\n\nvar _debug3 = _interopRequireDefault(_debug2);\n\nvar _config = require('../../config');\n\nvar _config2 = _interopRequireDefault(_config);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar paths = _config2.default.utils_paths;\nvar debug = (0, _debug3.default)('app:server:webpack-dev');\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2stZGV2LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7O2tCQVFlLFVBQVUsUUFBVixFQUFvQixVQUFwQixFQUFnQztBQUM3QyxRQUFNLGdDQUFOOztBQUVBLE1BQU0sYUFBYSxvQ0FBcUIsUUFBckIsRUFBK0I7QUFDaEQsMEJBRGdEO0FBRWhELGlCQUFhLE1BQU0sTUFBTixFQUZtQztBQUdoRCxTQUFLLElBSDJDO0FBSWhELFdBQU8saUJBQU8sY0FKa0M7QUFLaEQsWUFBUSxpQkFBTyxjQUxpQztBQU1oRCxVQUFNLEtBTjBDO0FBT2hELFdBQU8saUJBQU87QUFQa0MsR0FBL0IsQ0FBbkI7O0FBVUE7QUFBQSwwRUFBTyxpQkFBd0MsR0FBeEMsRUFBNkMsSUFBN0M7QUFBQSxVQUNELE9BREM7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEscUJBQ2Usc0NBQXVCLFVBQXZCLEVBQW1DLElBQUksR0FBdkMsRUFBNEM7QUFDOUQscUJBQUssYUFBQyxPQUFEO0FBQUEseUJBQWMsSUFBSSxJQUFKLEdBQVcsT0FBekI7QUFBQSxpQkFEeUQ7QUFFOUQsMkJBQVcscUJBQVk7QUFDckIsc0JBQUksR0FBSixDQUFRLEtBQVIsQ0FBYyxHQUFkLEVBQW1CLFNBQW5CO0FBQ0Q7QUFKNkQsZUFBNUMsQ0FEZjs7QUFBQTtBQUNELHFCQURDOztBQUFBLG1CQVFELE9BUkM7QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFBQSxxQkFTRyxNQVRIOztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEtBQVA7O0FBQUEsYUFBc0IsdUJBQXRCO0FBQUE7QUFBQTs7QUFBQSxXQUFzQix1QkFBdEI7QUFBQTtBQVlELEM7O0FBakNEOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7Ozs7QUFFQSxJQUFNLFFBQVEsaUJBQU8sV0FBckI7QUFDQSxJQUFNLFFBQVEscUJBQU8sd0JBQVAsQ0FBZCIsImZpbGUiOiJ3ZWJwYWNrLWRldi5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBXZWJwYWNrRGV2TWlkZGxld2FyZSBmcm9tICd3ZWJwYWNrLWRldi1taWRkbGV3YXJlJ1xuaW1wb3J0IGFwcGx5RXhwcmVzc01pZGRsZXdhcmUgZnJvbSAnLi4vbGliL2FwcGx5LWV4cHJlc3MtbWlkZGxld2FyZSdcbmltcG9ydCBfZGVidWcgZnJvbSAnZGVidWcnXG5pbXBvcnQgY29uZmlnIGZyb20gJy4uLy4uL2NvbmZpZydcblxuY29uc3QgcGF0aHMgPSBjb25maWcudXRpbHNfcGF0aHNcbmNvbnN0IGRlYnVnID0gX2RlYnVnKCdhcHA6c2VydmVyOndlYnBhY2stZGV2JylcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gKGNvbXBpbGVyLCBwdWJsaWNQYXRoKSB7XG4gIGRlYnVnKCdFbmFibGUgd2VicGFjayBkZXYgbWlkZGxld2FyZS4nKVxuXG4gIGNvbnN0IG1pZGRsZXdhcmUgPSBXZWJwYWNrRGV2TWlkZGxld2FyZShjb21waWxlciwge1xuICAgIHB1YmxpY1BhdGgsXG4gICAgY29udGVudEJhc2U6IHBhdGhzLmNsaWVudCgpLFxuICAgIGhvdDogdHJ1ZSxcbiAgICBxdWlldDogY29uZmlnLmNvbXBpbGVyX3F1aWV0LFxuICAgIG5vSW5mbzogY29uZmlnLmNvbXBpbGVyX3F1aWV0LFxuICAgIGxhenk6IGZhbHNlLFxuICAgIHN0YXRzOiBjb25maWcuY29tcGlsZXJfc3RhdHNcbiAgfSlcblxuICByZXR1cm4gYXN5bmMgZnVuY3Rpb24ga29hV2VicGFja0Rldk1pZGRsZXdhcmUgKGN0eCwgbmV4dCkge1xuICAgIGxldCBoYXNOZXh0ID0gYXdhaXQgYXBwbHlFeHByZXNzTWlkZGxld2FyZShtaWRkbGV3YXJlLCBjdHgucmVxLCB7XG4gICAgICBlbmQ6IChjb250ZW50KSA9PiAoY3R4LmJvZHkgPSBjb250ZW50KSxcbiAgICAgIHNldEhlYWRlcjogZnVuY3Rpb24gKCkge1xuICAgICAgICBjdHguc2V0LmFwcGx5KGN0eCwgYXJndW1lbnRzKVxuICAgICAgfVxuICAgIH0pXG5cbiAgICBpZiAoaGFzTmV4dCkge1xuICAgICAgYXdhaXQgbmV4dCgpXG4gICAgfVxuICB9XG59XG4iXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "webpack-dev.js"
+      ],
+      "names": [],
+      "mappings": ";;;;;;;;;;;;;;kBAQe,UAAU,QAAV,EAAoB,UAApB,EAAgC;AAC7C,QAAM,gCAAN;;AAEA,MAAM,aAAa,oCAAqB,QAArB,EAA+B;AAChD,0BADgD;AAEhD,iBAAa,MAAM,MAAN,EAFmC;AAGhD,SAAK,IAH2C;AAIhD,WAAO,iBAAO,cAJkC;AAKhD,YAAQ,iBAAO,cALiC;AAMhD,UAAM,KAN0C;AAOhD,WAAO,iBAAO;AAPkC,GAA/B,CAAnB;;AAUA;AAAA,0EAAO,iBAAwC,GAAxC,EAA6C,IAA7C;AAAA,UACD,OADC;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,qBACe,sCAAuB,UAAvB,EAAmC,IAAI,GAAvC,EAA4C;AAC9D,qBAAK,aAAC,OAAD;AAAA,yBAAc,IAAI,IAAJ,GAAW,OAAzB;AAAA,iBADyD;AAE9D,2BAAW,qBAAY;AACrB,sBAAI,GAAJ,CAAQ,KAAR,CAAc,GAAd,EAAmB,SAAnB;AACD;AAJ6D,eAA5C,CADf;;AAAA;AACD,qBADC;;AAAA,mBAQD,OARC;AAAA;AAAA;AAAA;;AAAA;AAAA,qBASG,MATH;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KAAP;;AAAA,aAAsB,uBAAtB;AAAA;AAAA;;AAAA,WAAsB,uBAAtB;AAAA;AAYD,C;;AAjCD;;;;AACA;;;;AACA;;;;AACA;;;;;;AAEA,IAAM,QAAQ,iBAAO,WAArB;AACA,IAAM,QAAQ,qBAAO,wBAAP,CAAd",
+      "file": "webpack-dev.js",
+      "sourcesContent": [
+        "import WebpackDevMiddleware from 'webpack-dev-middleware'\nimport applyExpressMiddleware from '../lib/apply-express-middleware'\nimport _debug from 'debug'\nimport config from '../../config'\n\nconst paths = config.utils_paths\nconst debug = _debug('app:server:webpack-dev')\n\nexport default function (compiler, publicPath) {\n  debug('Enable webpack dev middleware.')\n\n  const middleware = WebpackDevMiddleware(compiler, {\n    publicPath,\n    contentBase: paths.client(),\n    hot: true,\n    quiet: config.compiler_quiet,\n    noInfo: config.compiler_quiet,\n    lazy: false,\n    stats: config.compiler_stats\n  })\n\n  return async function koaWebpackDevMiddleware (ctx, next) {\n    let hasNext = await applyExpressMiddleware(middleware, ctx.req, {\n      end: (content) => (ctx.body = content),\n      setHeader: function () {\n        ctx.set.apply(ctx, arguments)\n      }\n    })\n\n    if (hasNext) {\n      await next()\n    }\n  }\n}\n"
+      ]
+    },
+    "mtime": 1468487700459
+  },
+  "{\"filename\":\"/home/bob/mm/server/lib/apply-express-middleware.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false}:6.10.4": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [
+            "applyExpressMiddleware",
+            "fn",
+            "req",
+            "res"
+          ],
+          "specifiers": [
+            {
+              "kind": "local",
+              "local": "applyExpressMiddleware",
+              "exported": "default"
+            },
+            {
+              "kind": "local",
+              "local": "fn",
+              "exported": "default"
+            },
+            {
+              "kind": "local",
+              "local": "req",
+              "exported": "default"
+            },
+            {
+              "kind": "local",
+              "local": "res",
+              "exported": "default"
+            }
+          ]
+        }
+      }
+    },
+    "options": {
+      "filename": "/home/bob/mm/server/lib/apply-express-middleware.js",
+      "filenameRelative": "/home/bob/mm/server/lib/apply-express-middleware.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMap": "both",
+      "sourceMaps": "both",
+      "sourceMapTarget": "apply-express-middleware.js",
+      "sourceFileName": "apply-express-middleware.js",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "basename": "apply-express-middleware"
+    },
+    "ignored": false,
+    "code": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _promise = require(\"babel-runtime/core-js/promise\");\n\nvar _promise2 = _interopRequireDefault(_promise);\n\nexports.default = applyExpressMiddleware;\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n// Based on: https://github.com/dayAlone/koa-webpack-hot-middleware/blob/master/index.js\nfunction applyExpressMiddleware(fn, req, res) {\n  var originalEnd = res.end;\n\n  return new _promise2.default(function (resolve) {\n    res.end = function () {\n      originalEnd.apply(this, arguments);\n      resolve(false);\n    };\n    fn(req, res, function () {\n      resolve(true);\n    });\n  });\n}\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcGx5LWV4cHJlc3MtbWlkZGxld2FyZS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O2tCQUN3QixzQjs7OztBQUR4QjtBQUNlLFNBQVMsc0JBQVQsQ0FBaUMsRUFBakMsRUFBcUMsR0FBckMsRUFBMEMsR0FBMUMsRUFBK0M7QUFDNUQsTUFBTSxjQUFjLElBQUksR0FBeEI7O0FBRUEsU0FBTyxzQkFBWSxVQUFDLE9BQUQsRUFBYTtBQUM5QixRQUFJLEdBQUosR0FBVSxZQUFZO0FBQ3BCLGtCQUFZLEtBQVosQ0FBa0IsSUFBbEIsRUFBd0IsU0FBeEI7QUFDQSxjQUFRLEtBQVI7QUFDRCxLQUhEO0FBSUEsT0FBRyxHQUFILEVBQVEsR0FBUixFQUFhLFlBQVk7QUFDdkIsY0FBUSxJQUFSO0FBQ0QsS0FGRDtBQUdELEdBUk0sQ0FBUDtBQVNEIiwiZmlsZSI6ImFwcGx5LWV4cHJlc3MtbWlkZGxld2FyZS5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIEJhc2VkIG9uOiBodHRwczovL2dpdGh1Yi5jb20vZGF5QWxvbmUva29hLXdlYnBhY2staG90LW1pZGRsZXdhcmUvYmxvYi9tYXN0ZXIvaW5kZXguanNcbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIGFwcGx5RXhwcmVzc01pZGRsZXdhcmUgKGZuLCByZXEsIHJlcykge1xuICBjb25zdCBvcmlnaW5hbEVuZCA9IHJlcy5lbmRcblxuICByZXR1cm4gbmV3IFByb21pc2UoKHJlc29sdmUpID0+IHtcbiAgICByZXMuZW5kID0gZnVuY3Rpb24gKCkge1xuICAgICAgb3JpZ2luYWxFbmQuYXBwbHkodGhpcywgYXJndW1lbnRzKVxuICAgICAgcmVzb2x2ZShmYWxzZSlcbiAgICB9XG4gICAgZm4ocmVxLCByZXMsIGZ1bmN0aW9uICgpIHtcbiAgICAgIHJlc29sdmUodHJ1ZSlcbiAgICB9KVxuICB9KVxufVxuIl19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "apply-express-middleware.js"
+      ],
+      "names": [],
+      "mappings": ";;;;;;;;;;kBACwB,sB;;;;AADxB;AACe,SAAS,sBAAT,CAAiC,EAAjC,EAAqC,GAArC,EAA0C,GAA1C,EAA+C;AAC5D,MAAM,cAAc,IAAI,GAAxB;;AAEA,SAAO,sBAAY,UAAC,OAAD,EAAa;AAC9B,QAAI,GAAJ,GAAU,YAAY;AACpB,kBAAY,KAAZ,CAAkB,IAAlB,EAAwB,SAAxB;AACA,cAAQ,KAAR;AACD,KAHD;AAIA,OAAG,GAAH,EAAQ,GAAR,EAAa,YAAY;AACvB,cAAQ,IAAR;AACD,KAFD;AAGD,GARM,CAAP;AASD",
+      "file": "apply-express-middleware.js",
+      "sourcesContent": [
+        "// Based on: https://github.com/dayAlone/koa-webpack-hot-middleware/blob/master/index.js\nexport default function applyExpressMiddleware (fn, req, res) {\n  const originalEnd = res.end\n\n  return new Promise((resolve) => {\n    res.end = function () {\n      originalEnd.apply(this, arguments)\n      resolve(false)\n    }\n    fn(req, res, function () {\n      resolve(true)\n    })\n  })\n}\n"
+      ]
+    },
+    "mtime": 1468487700459
+  },
+  "{\"filename\":\"/home/bob/mm/server/middleware/webpack-hmr.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false}:6.10.4": {
+    "metadata": {
+      "usedHelpers": [
+        "asyncToGenerator",
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "webpack-hot-middleware",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "WebpackHotMiddleware"
+              }
+            ]
+          },
+          {
+            "source": "../lib/apply-express-middleware",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "applyExpressMiddleware"
+              }
+            ]
+          },
+          {
+            "source": "debug",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "_debug"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [
+            "compiler",
+            "opts"
+          ],
+          "specifiers": [
+            {
+              "kind": "local",
+              "local": "compiler",
+              "exported": "default"
+            },
+            {
+              "kind": "local",
+              "local": "opts",
+              "exported": "default"
+            }
+          ]
+        }
+      }
+    },
+    "options": {
+      "filename": "/home/bob/mm/server/middleware/webpack-hmr.js",
+      "filenameRelative": "/home/bob/mm/server/middleware/webpack-hmr.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMap": "both",
+      "sourceMaps": "both",
+      "sourceMapTarget": "webpack-hmr.js",
+      "sourceFileName": "webpack-hmr.js",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "basename": "webpack-hmr"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _regenerator = require('babel-runtime/regenerator');\n\nvar _regenerator2 = _interopRequireDefault(_regenerator);\n\nvar _asyncToGenerator2 = require('babel-runtime/helpers/asyncToGenerator');\n\nvar _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);\n\nexports.default = function (compiler, opts) {\n  debug('Enable Webpack Hot Module Replacement (HMR).');\n\n  var middleware = (0, _webpackHotMiddleware2.default)(compiler, opts);\n  return function () {\n    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(ctx, next) {\n      var hasNext;\n      return _regenerator2.default.wrap(function _callee$(_context) {\n        while (1) {\n          switch (_context.prev = _context.next) {\n            case 0:\n              _context.next = 2;\n              return (0, _applyExpressMiddleware2.default)(middleware, ctx.req, ctx.res);\n\n            case 2:\n              hasNext = _context.sent;\n\n              if (!(hasNext && next)) {\n                _context.next = 6;\n                break;\n              }\n\n              _context.next = 6;\n              return next();\n\n            case 6:\n            case 'end':\n              return _context.stop();\n          }\n        }\n      }, _callee, this);\n    }));\n\n    function koaWebpackHMR(_x, _x2) {\n      return _ref.apply(this, arguments);\n    }\n\n    return koaWebpackHMR;\n  }();\n};\n\nvar _webpackHotMiddleware = require('webpack-hot-middleware');\n\nvar _webpackHotMiddleware2 = _interopRequireDefault(_webpackHotMiddleware);\n\nvar _applyExpressMiddleware = require('../lib/apply-express-middleware');\n\nvar _applyExpressMiddleware2 = _interopRequireDefault(_applyExpressMiddleware);\n\nvar _debug2 = require('debug');\n\nvar _debug3 = _interopRequireDefault(_debug2);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar debug = (0, _debug3.default)('app:server:webpack-hmr');\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2staG1yLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7O2tCQU1lLFVBQVUsUUFBVixFQUFvQixJQUFwQixFQUEwQjtBQUN2QyxRQUFNLDhDQUFOOztBQUVBLE1BQU0sYUFBYSxvQ0FBcUIsUUFBckIsRUFBK0IsSUFBL0IsQ0FBbkI7QUFDQTtBQUFBLDBFQUFPLGlCQUE4QixHQUE5QixFQUFtQyxJQUFuQztBQUFBLFVBQ0QsT0FEQztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxxQkFDZSxzQ0FBdUIsVUFBdkIsRUFBbUMsSUFBSSxHQUF2QyxFQUE0QyxJQUFJLEdBQWhELENBRGY7O0FBQUE7QUFDRCxxQkFEQzs7QUFBQSxvQkFHRCxXQUFXLElBSFY7QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFBQSxxQkFJRyxNQUpIOztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEtBQVA7O0FBQUEsYUFBc0IsYUFBdEI7QUFBQTtBQUFBOztBQUFBLFdBQXNCLGFBQXRCO0FBQUE7QUFPRCxDOztBQWpCRDs7OztBQUNBOzs7O0FBQ0E7Ozs7OztBQUVBLElBQU0sUUFBUSxxQkFBTyx3QkFBUCxDQUFkIiwiZmlsZSI6IndlYnBhY2staG1yLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFdlYnBhY2tIb3RNaWRkbGV3YXJlIGZyb20gJ3dlYnBhY2staG90LW1pZGRsZXdhcmUnXG5pbXBvcnQgYXBwbHlFeHByZXNzTWlkZGxld2FyZSBmcm9tICcuLi9saWIvYXBwbHktZXhwcmVzcy1taWRkbGV3YXJlJ1xuaW1wb3J0IF9kZWJ1ZyBmcm9tICdkZWJ1ZydcblxuY29uc3QgZGVidWcgPSBfZGVidWcoJ2FwcDpzZXJ2ZXI6d2VicGFjay1obXInKVxuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiAoY29tcGlsZXIsIG9wdHMpIHtcbiAgZGVidWcoJ0VuYWJsZSBXZWJwYWNrIEhvdCBNb2R1bGUgUmVwbGFjZW1lbnQgKEhNUikuJylcblxuICBjb25zdCBtaWRkbGV3YXJlID0gV2VicGFja0hvdE1pZGRsZXdhcmUoY29tcGlsZXIsIG9wdHMpXG4gIHJldHVybiBhc3luYyBmdW5jdGlvbiBrb2FXZWJwYWNrSE1SIChjdHgsIG5leHQpIHtcbiAgICBsZXQgaGFzTmV4dCA9IGF3YWl0IGFwcGx5RXhwcmVzc01pZGRsZXdhcmUobWlkZGxld2FyZSwgY3R4LnJlcSwgY3R4LnJlcylcblxuICAgIGlmIChoYXNOZXh0ICYmIG5leHQpIHtcbiAgICAgIGF3YWl0IG5leHQoKVxuICAgIH1cbiAgfVxufVxuIl19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "webpack-hmr.js"
+      ],
+      "names": [],
+      "mappings": ";;;;;;;;;;;;;;kBAMe,UAAU,QAAV,EAAoB,IAApB,EAA0B;AACvC,QAAM,8CAAN;;AAEA,MAAM,aAAa,oCAAqB,QAArB,EAA+B,IAA/B,CAAnB;AACA;AAAA,0EAAO,iBAA8B,GAA9B,EAAmC,IAAnC;AAAA,UACD,OADC;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,qBACe,sCAAuB,UAAvB,EAAmC,IAAI,GAAvC,EAA4C,IAAI,GAAhD,CADf;;AAAA;AACD,qBADC;;AAAA,oBAGD,WAAW,IAHV;AAAA;AAAA;AAAA;;AAAA;AAAA,qBAIG,MAJH;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KAAP;;AAAA,aAAsB,aAAtB;AAAA;AAAA;;AAAA,WAAsB,aAAtB;AAAA;AAOD,C;;AAjBD;;;;AACA;;;;AACA;;;;;;AAEA,IAAM,QAAQ,qBAAO,wBAAP,CAAd",
+      "file": "webpack-hmr.js",
+      "sourcesContent": [
+        "import WebpackHotMiddleware from 'webpack-hot-middleware'\nimport applyExpressMiddleware from '../lib/apply-express-middleware'\nimport _debug from 'debug'\n\nconst debug = _debug('app:server:webpack-hmr')\n\nexport default function (compiler, opts) {\n  debug('Enable Webpack Hot Module Replacement (HMR).')\n\n  const middleware = WebpackHotMiddleware(compiler, opts)\n  return async function koaWebpackHMR (ctx, next) {\n    let hasNext = await applyExpressMiddleware(middleware, ctx.req, ctx.res)\n\n    if (hasNext && next) {\n      await next()\n    }\n  }\n}\n"
+      ]
+    },
+    "mtime": 1468487700459
+  }
+}
