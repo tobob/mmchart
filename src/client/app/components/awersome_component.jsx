@@ -1,6 +1,6 @@
 import React from 'react';
 
-class AwesomeComponent extends React.Component {
+class AwesomeComponentInstalled extends React.Component {
 
   constructor(props) {
     super(props);
