@@ -12,7 +12,7 @@ app.use(function logErrors(err, req, res, next) {
         next(err);
     }
 );
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../../public')));
 
 function authenticate(name, pass, fn) {
   db.User.findOne ({username: name}, function(err, user) {

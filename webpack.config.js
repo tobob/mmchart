@@ -25,24 +25,6 @@ var config = [
         }
       ]
     }
-  },
-  {
-    name: 'server',
-    entry: SERVER_DIR + '/express.js',
-    target: 'node',
-    output: {
-      path: __dirname + '/dist/server',
-      filename: 'bundle.js',
-    },
-    resolve: {
-      extensions: ['', '.js', '.jsx', '.json']
-    },
-    module: {
-      loaders: [
-        { test: /\.js$/, loaders: ['babel-loader'] },
-        { test:  /\.json$/, loader: 'json-loader' },
-      ]
-    },
   }
 ];
 
