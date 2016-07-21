@@ -25,13 +25,14 @@ app.use(bodyParser.json());
 app.use(morgan('dev'));
 
 
-function authenticate(name, pass, fn) {
+function authenticate(name, pass, callback) {
+	console.log("Sprawdzam");
   db.User.findOne ({username: name}, function(err, user) {
-    if (!user) return fn(new Error('cannot find user'));
+    if (!user) return callback(new Error('cannot find user'));
     pwd.hash(pass, user.salt, function(err, hash){
-      if (err) return fn(err);
-      if (hash == user.hash) return fn(null, user);
-      fn(new Error('invalid password'));
+      if (err) return callback(err);
+      if (hash == user.hash) return callback(null, user);
+      callback(new Error('invalid password'));
     })
   })
 }
@@ -41,39 +42,52 @@ app.listen(app.get('port'));
 var apiRoutes = express.Router(); 
 
 apiRoutes.post('/authenticate', function(req, res) {
-	 authenticate(req.body.username, req.body.password, function(err, user){
-	 	if (err) throw err;
-    if (user) {
-     var token = jwt.sign(user, app.get('superSecret'), {
-       expiresIn: 60*1440 // expires in 24 hours
-     });
+	 authenticate(req.body.username, req.body.password, function(error, user){
+	 	console.log(user);
+	 	console.log(error);
+    if (error) {
+    	res.status(422).json({"errors": [error.message], status: "error"});
+    }
+    else {
+    	var token = jwt.sign(user, app.get('superSecret'), {
+        expiresIn: 86400 // expires in 24 hours
+     	});
      // return the information including token as JSON
-     res.json({
-       success: true,
-       message: 'Enjoy your token!',
-       token: token
-     });
-    } else {
-      res.json({ success: false, message: 'Authentication failed. User not found.' });
+      console.log(user)
+      res.set({
+			  'access-token': token,
+			  'expiry': '86400',
+			  'uid': user.email,
+			  'client': 'web'
+			})
+     	res.json({
+     		"data": {
+				  "uid": user.email,
+				  "provider": "email",
+				  "email": user.email,
+				  "favorite_color": null,
+				  "id": user.id
+				}
+      });
     }
   });
 });
 
+apiRoutes.delete('/logout', function(req, res) {
+	res.json({ success: true });
+})
+
 apiRoutes.post('/registration', function(req, res) {
-  // find the user
-  console.log('Registration');
-  console.log(req.params)
-  console.log(req.body);
-  console.log(req.query);
+  if(req.body.password != req.body.password_confirmation){
+    res.status(422).json({"errors": {password_confirmation: ["doesn't match Password"],}, status: "error"});
+  }
   db.User.findOne({
     email: req.body.email
   }, function(err, user) {
-
     if (err) throw err;
 
     if (user) {
-      console.log('User already exists');
-      res.json({ success: false, message: 'Registration failed. User already exist.' });
+      res.status(422).json({"errors": {email: ["User already exists"]}, status: "error"});
     } else {
 
       var newUser = new db.User();
@@ -85,20 +99,31 @@ apiRoutes.post('/registration', function(req, res) {
 			  }
 			  newUser.salt = salt;
 			  newUser.hash = hash;
-			  newUser.save(function(err) {
+			  newUser.save(function(err, justCreatedUser) {
 			    if (err) {
 			      console.log(err);
 			    } else {
+            console.log(justCreatedUser);
 			      console.log("user saved");
 			      var token = jwt.sign(newUser, app.get('superSecret'), {
           		expiresIn: 1440*60 // expires in 24 hours
         		});
         		
-        		res.json({
-          		success: true,
-          		message: 'Enjoy your token!',
-          		token: token
-        		});
+            res.set({
+              'access-token': token,
+              'expiry': '86400',
+              'uid': newUser.email,
+              'client': 'web'
+            })
+            res.json({
+              "data": {
+                "uid": newUser.email,
+                "provider": "email",
+                "email": newUser.email,
+                "favorite_color": null,
+                "id": newUser._id
+              }
+            });
 			    }
 			  });
 			});
@@ -121,7 +146,6 @@ apiRoutes.use(function(req, res, next) {
       } else {
         // if everything is good, save to request for use in other routes
         req.decoded = decoded;    
-        console.log("kokojambo");
         next();
       }
     });
@@ -141,6 +165,7 @@ apiRoutes.use(function(req, res, next) {
 apiRoutes.get('/', function(req, res) {
   res.json({ message: 'Welcome to the coolest API on earth!' });
 });
+
 
 // route to return all users (GET http://localhost:8080/api/users)
 apiRoutes.get('/users', function(req, res) {

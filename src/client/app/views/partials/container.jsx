@@ -3,7 +3,7 @@ import { Grid, Navbar, NavItem, Nav, Brand } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
 class Container extends React.Component {
-  static propTypes = {
+  propTypes: {
     children: PropTypes.node
   };
 
@@ -12,7 +12,7 @@ class Container extends React.Component {
       <div className="wrapper">
         <Navbar className="main-nav">
           <LinkContainer to="/">
-            <Navbar.Brand>Redux Auth</Navbar.Brand>
+            <Navbar.Brand>Redux Auth 2</Navbar.Brand>
           </LinkContainer>
           <Nav>
             <LinkContainer to="/" onlyActiveOnIndex={true}>
@@ -20,6 +20,9 @@ class Container extends React.Component {
             </LinkContainer>
             <LinkContainer to="/account">
               <NavItem eventKey={2}>Account</NavItem>
+            </LinkContainer>
+            <LinkContainer to="/registration">
+              <NavItem eventKey={3}>Registration</NavItem>
             </LinkContainer>
           </Nav>
         </Navbar>

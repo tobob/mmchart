@@ -5,13 +5,15 @@ import { configure, authStateReducer } from 'redux-auth';
 import {createStore, compose, applyMiddleware} from "redux";
 import {Router, createMemoryHistory, browserHistory} from "react-router";
 import { routerReducer, syncHistoryWithStore } from "react-router-redux";
+import { requestsReducer } from "./reducers/requests_reducer";
 import {combineReducers} from "redux";
 import thunk from "redux-thunk";
-import Container from "./views/partials/Container";
+import Container from "./views/partials/container";
 import Main from "./views/main";
 import SignIn from "./views/sign_in";
-import Account from "./views/account"
-import GlobalComponents from "./views/partials/GlobalComponents";
+import SignUp from "./views/sign_up";
+import Account from "./views/account";
+import GlobalComponents from "./views/partials/global_components";
 
 class App extends React.Component {
   render() {
@@ -35,6 +37,7 @@ export function initialize({cookies, isServer, currentLocation, userAgent} = {})
   const reducer = combineReducers({
     auth: authStateReducer,
     routing: routerReducer,
+    requests: requestsReducer
   });
 
   // create the redux store
@@ -57,6 +60,7 @@ export function initialize({cookies, isServer, currentLocation, userAgent} = {})
       <Route path="/" component={App}>
         <IndexRoute component={Main} />
         <Route path="login" component={SignIn} />
+        <Route path="registration" component={SignUp} />
         <Route
           path="account"
           component={Account}
@@ -68,27 +72,15 @@ export function initialize({cookies, isServer, currentLocation, userAgent} = {})
   /**
    * The React Router 1.0 routes for both the server and the client.
    */
+  const __API_URL__ = "http://localhost:8080/api"
+
   return store.dispatch(configure([
     {
       default: {
-        apiUrl: __API_URL__
-      }
-    }, {
-      evilUser: {
-        apiUrl:                __API_URL__,
-        signOutPath:           "/mangs/sign_out",
-        emailSignInPath:       "/mangs/sign_in",
-        emailRegistrationPath: "/mangs",
-        accountUpdatePath:     "/mangs",
-        accountDeletePath:     "/mangs",
-        passwordResetPath:     "/mangs/password",
-        passwordUpdatePath:    "/mangs/password",
-        tokenValidationPath:   "/mangs/validate_token",
-        authProviderPaths: {
-          github:    "/mangs/github",
-          facebook:  "/mangs/facebook",
-          google:    "/mangs/google_oauth2"
-        }
+        apiUrl: __API_URL__,
+        emailSignInPath:       "/authenticate",
+        emailRegistrationPath: "/registration",
+        signOutPath:           "/logout",
       }
     }
   ], {
