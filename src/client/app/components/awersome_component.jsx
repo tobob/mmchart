@@ -1,23 +1,37 @@
 import React from 'react';
+import CakeChart from 'cake-chart';
+
+const TREE = {
+  value: 100,
+  fill: "black"
+  label: 'Life levels',
+  children: [{
+    value: 16,
+    children: [{
+      value: 16,
+      children: [{
+        value: 16
+      }]
+    }]
+    }, {
+      value: 16
+    }, {
+      value: 16
+    }]
+};
 
 class AwesomeComponent extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {likesCount : 0};
-    this.onLike = this.onLike.bind(this);
-  }
-
-  onLike () {
-    let newLikesCount = this.state.likesCount + 1;
-    this.setState({likesCount: newLikesCount});
+  handleClick() {
+    console.log("koko");
   }
 
   render() {
     return (
       <div>
-        Likes : <span>{this.state.likesCount}</span>
-        <div><button onClick={this.onLike}>Like Me</button></div>
+        <CakeChart data={TREE} onClick={this.handleClick}
+                 coreRadius={120}
+                 ringWidth={80}
+                 ringWidthFactor={0.6}/>
       </div>
     );
   }

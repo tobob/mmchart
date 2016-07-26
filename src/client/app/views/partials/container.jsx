@@ -24,6 +24,9 @@ class Container extends React.Component {
             <LinkContainer to="/registration">
               <NavItem eventKey={3}>Registration</NavItem>
             </LinkContainer>
+            <LinkContainer to="/chart">
+              <NavItem eventKey={4}>Chart</NavItem>
+            </LinkContainer>
           </Nav>
         </Navbar>
 
