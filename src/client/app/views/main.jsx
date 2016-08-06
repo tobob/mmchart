@@ -7,7 +7,7 @@ import { connect } from "react-redux";
 
 class Main extends React.Component {
   render () {
-    return (<div> kokojambo</div>)
+    return (<div>Main.jsx</div>)
   }
 }
 

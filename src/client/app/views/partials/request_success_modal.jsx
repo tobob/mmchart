@@ -1,9 +1,9 @@
 import React, { PropTypes } from "react";
 import { Modal, Button } from "react-bootstrap";
 import { connect } from "react-redux";
-import { dismissRequestErrorModal } from "../../actions/info-modals";
+import { dismissRequestSuccessModal } from "../../actions/info-modals";
 
-class RequestErrorModal extends React.Component {
+class RequestSuccessModal extends React.Component {
   static propTypes = {
     show: PropTypes.bool
   };
@@ -13,7 +13,7 @@ class RequestErrorModal extends React.Component {
   };
 
   close () {
-    this.props.dispatch(dismissRequestErrorModal());
+    this.props.dispatch(dismissRequestSuccessModal());
   }
 
   render () {
@@ -21,12 +21,12 @@ class RequestErrorModal extends React.Component {
       <Modal show={this.props.show}
              onHide={this.close.bind(this)}>
         <Modal.Header closeButton>
-          <Modal.Title>Ajax Request Error</Modal.Title>
+          <Modal.Title>Great!</Modal.Title>
         </Modal.Header>
 
         <Modal.Body>
           <p>
-            Request to failed.
+            You are now logged in!
           </p>
         </Modal.Body>
 
@@ -41,5 +41,5 @@ class RequestErrorModal extends React.Component {
 }
 
 export default connect(({requests}) => ({
-  show: requests.get("showErrorModal")
-}))(RequestErrorModal);
+  show: requests.get("showSuccessModal")
+}))(RequestSuccessModal);

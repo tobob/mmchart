@@ -1,7 +1,6 @@
 import Immutable from "immutable";
 import { createReducer } from "redux-immutablejs";
 import * as ModalsActions from "../actions/info-modals";
-import * as EmailSignInActions from 'redux-auth';
 
 const initialState = Immutable.fromJS({
   showSuccessModal: false,
@@ -29,18 +28,15 @@ export default createReducer(initialState, {
     lastRequestUrl: key
   }),
 
-  ['EMAIL_SIGN_IN_ERROR']: function(state, {key}) {
-    console.log("kokopiko")
-    return state.merge({
-      buttons: {
-        [key]: {
-          loading: false
-        }
-      },
-      showErrorModal: true,
-      lastRequestUrl: key
-    })
-  },
+  ['EMAIL_SIGN_IN_ERROR']: (state, {key}) => state.mergeDeep({
+    buttons: {
+      [key]: {
+        loading: false
+      }
+    },
+    showErrorModal: true,
+    lastRequestUrl: key
+  }),
 
   [ModalsActions.DISMISS_REQUEST_SUCCESS_MODAL]: state => state.merge({
     showSuccessModal: false,

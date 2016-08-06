@@ -9,7 +9,7 @@ class SignUp extends React.Component {
     return (
       <div>
         <PageHeader>Sign Up</PageHeader>
-
+        
         <EmailSignUpForm
           next={() => browserHistory.push("/account")}
           endpoint={this.props.pageEndpoint} />

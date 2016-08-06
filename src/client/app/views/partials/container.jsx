@@ -1,6 +1,7 @@
 import React, { PropTypes } from "react";
 import { Grid, Navbar, NavItem, Nav, Brand } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import LoginRegisterButtons from "../../components/login_register_buttons"
 
 class Container extends React.Component {
   propTypes: {
@@ -14,17 +15,7 @@ class Container extends React.Component {
           <LinkContainer to="/">
             <Navbar.Brand>Redux Auth 2</Navbar.Brand>
           </LinkContainer>
-          <Nav>
-            <LinkContainer to="/" onlyActiveOnIndex={true}>
-              <NavItem eventKey={1}>Home</NavItem>
-            </LinkContainer>
-            <LinkContainer to="/account">
-              <NavItem eventKey={2}>Account</NavItem>
-            </LinkContainer>
-            <LinkContainer to="/registration">
-              <NavItem eventKey={3}>Registration</NavItem>
-            </LinkContainer>
-          </Nav>
+          <LoginRegisterButtons />
         </Navbar>
 
         <Grid className="content">

@@ -5,7 +5,7 @@ import { configure, authStateReducer } from 'redux-auth';
 import {createStore, compose, applyMiddleware} from "redux";
 import {Router, createMemoryHistory, browserHistory} from "react-router";
 import { routerReducer, syncHistoryWithStore } from "react-router-redux";
-import { requestsReducer } from "./reducers/requests_reducer";
+import requestsReducer from "./reducers/requests_reducer";
 import {combineReducers} from "redux";
 import thunk from "redux-thunk";
 import Container from "./views/partials/container";
@@ -34,6 +34,10 @@ function requireAuth (store, nextState, replace, next) {
 }
 
 export function initialize({cookies, isServer, currentLocation, userAgent} = {}) {
+  console.log("koko");
+  console.log(requestsReducer);
+  console.log(routerReducer);
+  console.log(authStateReducer);
   const reducer = combineReducers({
     auth: authStateReducer,
     routing: routerReducer,
