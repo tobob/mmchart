@@ -14,6 +14,7 @@ import SignIn from "./views/sign_in";
 import SignUp from "./views/sign_up";
 import Account from "./views/account";
 import GlobalComponents from "./views/partials/global_components";
+import AwesomeComponent from "./components/awersome_component";
 
 class App extends React.Component {
   render() {
@@ -69,6 +70,7 @@ export function initialize({cookies, isServer, currentLocation, userAgent} = {})
           path="account"
           component={Account}
           onEnter={requireAuth.bind(this, store)} />
+        <Route path="chart" component={AwesomeComponent} />
       </Route>
     </Router>
   );
