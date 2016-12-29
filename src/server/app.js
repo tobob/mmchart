@@ -20,13 +20,15 @@ app.use(function logErrors(err, req, res, next) {
     }
 );
 app.use(express.static(path.join(__dirname, '../../public')));
+app.get('*', function response(req, res) {
+  res.sendFile(path.join(__dirname, '../../public/index.html'));
+});
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(morgan('dev'));
 
 
 function authenticate(name, pass, callback) {
-	console.log("Sprawdzam");
   db.User.findOne ({username: name}, function(err, user) {
     if (!user) return callback(new Error('cannot find user'));
     pwd.hash(pass, user.salt, function(err, hash){

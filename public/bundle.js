@@ -21725,10 +21725,6 @@
 	  var currentLocation = _ref.currentLocation;
 	  var userAgent = _ref.userAgent;
 	
-	  console.log("koko");
-	  console.log(_requests_reducer2.default);
-	  console.log(_reactRouterRedux.routerReducer);
-	  console.log(_reduxAuth.authStateReducer);
 	  var reducer = (0, _redux.combineReducers)({
 	    auth: _reduxAuth.authStateReducer,
 	    routing: _reactRouterRedux.routerReducer,

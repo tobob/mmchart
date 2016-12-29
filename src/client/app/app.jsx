@@ -35,10 +35,6 @@ function requireAuth (store, nextState, replace, next) {
 }
 
 export function initialize({cookies, isServer, currentLocation, userAgent} = {}) {
-  console.log("koko");
-  console.log(requestsReducer);
-  console.log(routerReducer);
-  console.log(authStateReducer);
   const reducer = combineReducers({
     auth: authStateReducer,
     routing: routerReducer,
